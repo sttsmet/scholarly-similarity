@@ -1,0 +1,14 @@
+request_type: seed_cycle_materialization_request
+schema_version: 1
+request_id: seed_cycle_request_example
+created_at: "2026-04-05T14:00:00Z"
+packet_yaml: runs/seed_review_packets/seed_packet_example/seed_selection_review_packet.yaml
+reply_id: seed_reply_inbox_example
+seed_set_id: seed_set_inbox_example
+cycle_id: seed_cycle_inbox_example
+benchmark_preset_id: benchmark_preset_seed_inbox_example
+launch_profile_id: launch_seed_inbox_example
+accepted_baseline_id: baseline_001
+eval_preset_id: eval_preset_001
+description: "Example inbox-driven materialized seed cycle"
+materialize_only: true

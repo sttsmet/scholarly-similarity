@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>192.168.6.98 Services</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --panel: #fffdf8;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #d6d3d1;
+      --accent: #0f766e;
+      --accent-soft: #ccfbf1;
+      --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.14), transparent 30%),
+        linear-gradient(180deg, #faf7f0 0%, var(--bg) 100%);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    .hero {
+      background: rgba(255, 253, 248, 0.82);
+      border: 1px solid rgba(214, 211, 209, 0.9);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      backdrop-filter: blur(8px);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 220px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 24px;
+    }
+
+    .card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .status::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: #10b981;
+      box-shadow: 0 0 0 6px rgba(16, 185, 129, 0.14);
+    }
+
+    .muted-status {
+      color: #9a3412;
+    }
+
+    .muted-status::before {
+      background: #f59e0b;
+      box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.14);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    a.button,
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    a.button {
+      background: var(--text);
+      color: white;
+      box-shadow: 0 12px 24px rgba(31, 41, 55, 0.16);
+    }
+
+    a.button.alt {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--line);
+      box-shadow: none;
+    }
+
+    a.button:hover {
+      transform: translateY(-1px);
+    }
+
+    .pill {
+      background: #f5f5f4;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      font-family: "IBM Plex Mono", "SFMono-Regular", monospace;
+      font-size: 13px;
+    }
+
+    .section-title {
+      margin: 34px 0 14px;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <span class="eyebrow">Service Dashboard</span>
+      <h1>192.168.6.98</h1>
+      <p>
+        One place to reach the web-facing services on this host. The main app stays on the root URL,
+        and this dashboard lives at <strong>/services/</strong> so nothing else gets displaced.
+      </p>
+    </section>
+
+    <div class="section-title">Public Web Services</div>
+    <section class="grid">
+      <article class="card">
+        <div>
+          <div class="status">Live</div>
+          <h2>Main App</h2>
+          <p>The primary Streamlit app served through nginx on port 80.</p>
+        </div>
+        <div class="links">
+          <a class="button" href="http://192.168.6.98/">Open App</a>
+          <span class="pill">http://192.168.6.98/</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="status">Live</div>
+          <h2>Codex Terminal</h2>
+          <p>The browser terminal view backed by the locally logged-in Codex CLI and ttyd.</p>
+        </div>
+        <div class="links">
+          <a class="button" href="http://192.168.6.98:8081/">Open Terminal</a>
+          <span class="pill">http://192.168.6.98:8081/</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="status">Live</div>
+          <h2>Code Server</h2>
+          <p>The browser IDE for editing this repo. Codex CLI works reliably from its integrated terminal.</p>
+        </div>
+        <div class="links">
+          <a class="button" href="http://192.168.6.98:8082/">Open IDE</a>
+          <span class="pill">http://192.168.6.98:8082/</span>
+        </div>
+      </article>
+    </section>
+
+    <div class="section-title">Internal Services</div>
+    <section class="grid">
+      <article class="card">
+        <div>
+          <div class="status">Live</div>
+          <h2>App Upstream</h2>
+          <p>The direct Streamlit upstream, now published on the host IP for quick checks outside the main root app route.</p>
+        </div>
+        <div class="links">
+          <a class="button" href="http://192.168.6.98:8501/">Open Upstream</a>
+          <span class="pill">http://192.168.6.98:8501/</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="status">Live</div>
+          <h2>Neo4j Browser</h2>
+          <p>The Neo4j HTTP browser is now reachable directly on the host IP while the database itself stays behind Neo4j auth.</p>
+        </div>
+        <div class="links">
+          <a class="button" href="http://192.168.6.98:7474/">Open Browser</a>
+          <span class="pill">http://192.168.6.98:7474/</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="status">Live</div>
+          <h2>Neo4j Bolt</h2>
+          <p>The Neo4j Bolt endpoint is now published for database clients on the same host IP.</p>
+        </div>
+        <div class="links">
+          <span class="pill">bolt://192.168.6.98:7687</span>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      This page is a launcher and inventory view. The database endpoints are now reachable on the host IP,
+      so keep access constrained to your VPN or another trusted private network.
+    </footer>
+  </main>
+</body>
+</html>

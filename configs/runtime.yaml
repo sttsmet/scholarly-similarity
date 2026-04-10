@@ -1,0 +1,7 @@
+app_name: scholarly-similarity
+openalex_base_url: https://api.openalex.org
+use_network: false
+cache_dir: data/cache
+runs_dir: runs
+request_timeout_seconds: 10.0
+

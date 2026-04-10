@@ -1,0 +1,4 @@
+seed_openalex_id,seed_title,candidate_openalex_id,title,publication_year,label,label_confidence,aspect,annotator_id,notes,adjudicated_label,adjudication_notes
+https://openalex.org/WSEED,Measured measurement,https://openalex.org/WCAND1,Reference match,2019,2,0.95,lineage,alice,Strong direct lineage evidence,,
+https://openalex.org/WSEED,Measured measurement,https://openalex.org/WCAND2,Related match,2017,1,0.75,lineage,alice,Related but weaker lineage link,,
+https://openalex.org/WSEED,Measured measurement,https://openalex.org/WCAND3,Background contrast,2010,0,0.60,lineage,alice,Not lineage-relevant,,

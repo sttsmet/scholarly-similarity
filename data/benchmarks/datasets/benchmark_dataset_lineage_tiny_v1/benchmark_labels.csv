@@ -1,0 +1,4 @@
+seed_openalex_id,candidate_openalex_id,label,label_confidence,label_reason,notes
+https://openalex.org/WSEED,https://openalex.org/WCAND1,2,0.925000,independent_lineage_human_annotation,alice: Strong direct lineage evidence | bob: Clearly in the citation lineage
+https://openalex.org/WSEED,https://openalex.org/WCAND2,1,0.725000,independent_lineage_human_annotation,alice: Related but weaker lineage link | bob: Some lineage adjacency but weaker
+https://openalex.org/WSEED,https://openalex.org/WCAND3,0,0.575000,independent_lineage_human_annotation,alice: Not lineage-relevant | bob: Useful contrast but not lineage

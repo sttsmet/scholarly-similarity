@@ -1,0 +1,200 @@
+{
+  "generated_at": "2026-04-10T11:47:15.364829+00:00",
+  "batch_root": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409",
+  "discovered_files": {
+    "completed_annotator_csvs": [
+      "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409/annotator_a.completed_revA_20260410.corrected.csv",
+      "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409/annotator_b.completed_revB_20260410.corrected.csv"
+    ],
+    "returned_conflict_sheet": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409/annotation_conflicts_after_normalization_20260410.csv"
+  },
+  "file_summaries": [
+    {
+      "path": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409/annotator_a.completed_revA_20260410.corrected.csv",
+      "normalized_output_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409/materialization_inputs_20260410/annotator_a.completed_revA_20260410.corrected.materialize.csv",
+      "required_columns_present": true,
+      "schema_valid": true,
+      "loaded_row_count": 48,
+      "reviewed_row_count": 48,
+      "annotator_ids_in_file": [
+        "annotator_a"
+      ],
+      "annotator_identity_consistent": true,
+      "duplicate_row_detected": false,
+      "fieldnames": [
+        "seed_openalex_id",
+        "seed_title",
+        "candidate_openalex_id",
+        "title",
+        "publication_year",
+        "label",
+        "label_confidence",
+        "aspect",
+        "annotator_id",
+        "notes",
+        "adjudicated_label",
+        "adjudication_notes"
+      ]
+    },
+    {
+      "path": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409/annotator_b.completed_revB_20260410.corrected.csv",
+      "normalized_output_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409/materialization_inputs_20260410/annotator_b.completed_revB_20260410.corrected.materialize.csv",
+      "required_columns_present": true,
+      "schema_valid": true,
+      "loaded_row_count": 48,
+      "reviewed_row_count": 48,
+      "annotator_ids_in_file": [
+        "annotator_b"
+      ],
+      "annotator_identity_consistent": true,
+      "duplicate_row_detected": false,
+      "fieldnames": [
+        "seed_openalex_id",
+        "seed_title",
+        "candidate_openalex_id",
+        "title",
+        "publication_year",
+        "label",
+        "label_confidence",
+        "aspect",
+        "annotator_id",
+        "notes",
+        "adjudicated_label",
+        "adjudication_notes"
+      ]
+    }
+  ],
+  "schema_valid": true,
+  "duplicate_row_detected": false,
+  "annotator_identity_consistent": true,
+  "validation_failures": [],
+  "categorical_confidence_rows_rewritten_as_blank": {
+    "annotator_a": 48,
+    "annotator_b": 0
+  },
+  "pre_adjudication_conflict_pair_count": 6,
+  "pre_adjudication_conflicts": [
+    {
+      "seed_openalex_id": "https://openalex.org/W1971384536",
+      "candidate_openalex_id": "https://openalex.org/W37221705",
+      "annotator_ids": [
+        "annotator_a",
+        "annotator_b"
+      ],
+      "raw_labels": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W1971384536",
+      "candidate_openalex_id": "https://openalex.org/W4390136457",
+      "annotator_ids": [
+        "annotator_a",
+        "annotator_b"
+      ],
+      "raw_labels": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W2941673255",
+      "candidate_openalex_id": "https://openalex.org/W2989761958",
+      "annotator_ids": [
+        "annotator_a",
+        "annotator_b"
+      ],
+      "raw_labels": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W2941673255",
+      "candidate_openalex_id": "https://openalex.org/W4320854479",
+      "annotator_ids": [
+        "annotator_a",
+        "annotator_b"
+      ],
+      "raw_labels": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W1561042475",
+      "annotator_ids": [
+        "annotator_a",
+        "annotator_b"
+      ],
+      "raw_labels": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W2144965412",
+      "annotator_ids": [
+        "annotator_a",
+        "annotator_b"
+      ],
+      "raw_labels": [
+        "0",
+        "1"
+      ]
+    }
+  ],
+  "resolved_conflict_sheet": {
+    "path": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409/annotation_conflicts_after_normalization_20260410.csv",
+    "header": "seed_openalex_id,candidate_openalex_id,seed_title,title,annotator_a_label,annotator_b_label,annotator_a_confidence,annotator_b_confidence,annotator_a_notes,annotator_b_notes,adjudicated_label,adjudication_notes;",
+    "row_count": 6,
+    "rows": [
+      {
+        "line_number": 2,
+        "seed_openalex_id": "https://openalex.org/W1971384536",
+        "candidate_openalex_id": "https://openalex.org/W37221705",
+        "resolved_label": "2"
+      },
+      {
+        "line_number": 3,
+        "seed_openalex_id": "https://openalex.org/W1971384536",
+        "candidate_openalex_id": "https://openalex.org/W4390136457",
+        "resolved_label": "2"
+      },
+      {
+        "line_number": 4,
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "candidate_openalex_id": "https://openalex.org/W2989761958",
+        "resolved_label": "1"
+      },
+      {
+        "line_number": 5,
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "candidate_openalex_id": "https://openalex.org/W4320854479",
+        "resolved_label": "1"
+      },
+      {
+        "line_number": 6,
+        "seed_openalex_id": "https://openalex.org/W4289253527",
+        "candidate_openalex_id": "https://openalex.org/W1561042475",
+        "resolved_label": "2"
+      },
+      {
+        "line_number": 7,
+        "seed_openalex_id": "https://openalex.org/W4289253527",
+        "candidate_openalex_id": "https://openalex.org/W2144965412",
+        "resolved_label": "1"
+      }
+    ]
+  },
+  "post_adjudication_import": {
+    "conflict_pair_count": 6,
+    "adjudicated_conflict_count": 6,
+    "adjudication_complete": true,
+    "benchmark_labels_row_count_if_materialized": 60,
+    "source_annotation_row_count": 102
+  }
+}

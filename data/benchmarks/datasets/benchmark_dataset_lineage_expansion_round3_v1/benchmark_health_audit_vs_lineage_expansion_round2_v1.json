@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-04-10T13:29:15.051478+00:00",
+  "round3_dataset": {
+    "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round3_v1",
+    "benchmark_labels_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round3_v1/benchmark_labels.csv",
+    "benchmark_dataset_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round3_v1/benchmark_dataset_manifest.json",
+    "benchmark_preset_path": "/home/stts/projects/scholarly-similarity/configs/presets/benchmarks/benchmark_preset_independent_lineage_expansion_round3_v1.json",
+    "benchmark_labels_row_count": 60,
+    "seed_count": 10,
+    "label_distribution": {
+      "0": 29,
+      "1": 20,
+      "2": 11
+    },
+    "agreement_summary": {
+      "agreement_rate": 1.0,
+      "disagreement_pair_count": 0,
+      "exact_match_pair_count": 60,
+      "metric_name": "raw_pair_agreement",
+      "overlap_pair_count": 60
+    },
+    "conflict_pair_count": 0,
+    "adjudicated_conflict_count": 0,
+    "adjudication_complete": true,
+    "benchmark_maturity_tier": "pilot",
+    "promotion_ready": false,
+    "promotion_ineligibility_reasons": [
+      "At least 150 labeled pairs are required for promotion-ready maturity."
+    ],
+    "per_seed_counts": {
+      "https://openalex.org/W1971487905": 8,
+      "https://openalex.org/W1974169933": 4,
+      "https://openalex.org/W1988974364": 4,
+      "https://openalex.org/W2027919910": 3,
+      "https://openalex.org/W2047498859": 4,
+      "https://openalex.org/W2764035156": 4,
+      "https://openalex.org/W2941673255": 8,
+      "https://openalex.org/W3206040918": 8,
+      "https://openalex.org/W4289253527": 9,
+      "https://openalex.org/W4407956601": 8
+    },
+    "returned_pair_strata_counts": {
+      "strong_lineage": 10,
+      "indirect_lineage": 7,
+      "ambiguous_middle": 17,
+      "provenance_weak": 7,
+      "hard_negative_or_distractor": 19
+    }
+  },
+  "round2_dataset": {
+    "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round2_v1",
+    "benchmark_labels_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/benchmark_labels.csv",
+    "benchmark_dataset_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/benchmark_dataset_manifest.json",
+    "benchmark_preset_path": "/home/stts/projects/scholarly-similarity/configs/presets/benchmarks/benchmark_preset_independent_lineage_expansion_round2_v1.json",
+    "benchmark_labels_row_count": 60,
+    "seed_count": 9,
+    "label_distribution": {
+      "0": 22,
+      "1": 24,
+      "2": 14
+    },
+    "agreement_summary": {
+      "agreement_rate": 0.833333,
+      "disagreement_pair_count": 6,
+      "exact_match_pair_count": 30,
+      "metric_name": "raw_pair_agreement",
+      "overlap_pair_count": 36
+    },
+    "benchmark_maturity_tier": "pilot",
+    "promotion_ready": false,
+    "round2_batch_strata_counts": {
+      "ambiguous_middle": 18,
+      "hard_negative_or_distractor": 20,
+      "indirect_lineage": 0,
+      "provenance_weak": 8,
+      "strong_lineage": 14
+    }
+  },
+  "comparison_vs_round2": {
+    "pair_count_delta": 0,
+    "seed_count_delta": 1,
+    "label_distribution_delta": {
+      "0": 7,
+      "1": -4,
+      "2": -3
+    },
+    "returned_pair_count_vs_round3_batch_target_delta": -20,
+    "less_shortcut_shaped_than_round2": true,
+    "indirect_lineage_remains_present": true,
+    "round2_strong_lineage_share": 0.233333,
+    "round3_strong_lineage_share": 0.166667,
+    "round3_indirect_lineage_count": 7
+  },
+  "recommendation": {
+    "choice": "ready for next constrained theory round",
+    "rationale": "Round 3 now has 10 labeled seeds, full pairwise agreement on the returned subset, balanced label coverage including labels 0/1/2, and non-zero indirect_lineage coverage, which is enough to reopen a constrained theory loop even though the benchmark is still pilot-tier rather than promotion-ready."
+  }
+}

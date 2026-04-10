@@ -1,0 +1,61 @@
+seed_openalex_id,candidate_openalex_id,label,label_confidence,label_reason,notes
+https://openalex.org/W1971487905,https://openalex.org/W1832964183,1,,independent_lineage_human_annotation,"annotator_a: homodyne measurement, not tomo | annotator_b: homodyne measurement, not tomo"
+https://openalex.org/W1971487905,https://openalex.org/W1974753956,0,,independent_lineage_human_annotation,annotator_a: receiver design only | annotator_b: receiver design only
+https://openalex.org/W1971487905,https://openalex.org/W2024923816,2,0.950000,independent_lineage_human_annotation,annotator_a: direct homodyne tomography link | annotator_b: direct homodyne tomography link
+https://openalex.org/W1971487905,https://openalex.org/W2037793298,0,,independent_lineage_human_annotation,annotator_a: unrelated circuit synthesis | annotator_b: unrelated circuit synthesis
+https://openalex.org/W1971487905,https://openalex.org/W2037935301,1,,independent_lineage_human_annotation,annotator_a: homodyne theory; indirect only | annotator_b: homodyne theory; indirect only
+https://openalex.org/W1971487905,https://openalex.org/W2050691228,1,,independent_lineage_human_annotation,annotator_a: measurement adjacent via homodyne | annotator_b: measurement adjacent via homodyne
+https://openalex.org/W1971487905,https://openalex.org/W2068253929,0,,independent_lineage_human_annotation,annotator_a: instrumentation only | annotator_b: instrumentation only
+https://openalex.org/W1971487905,https://openalex.org/W2084259546,1,,independent_lineage_human_annotation,"annotator_a: homodyne-related, not process tomo | annotator_b: homodyne-related, not process tomo"
+https://openalex.org/W1974169933,https://openalex.org/W1545748428,0,,independent_lineage_human_annotation,annotator_a: title looks off-topic | annotator_b: title looks off-topic
+https://openalex.org/W1974169933,https://openalex.org/W2056576695,0,,independent_lineage_human_annotation,annotator_a: unrelated circuit QED | annotator_b: unrelated circuit QED
+https://openalex.org/W1974169933,https://openalex.org/W2082822469,2,0.950000,independent_lineage_human_annotation,annotator_a: explicit state/process tomography | annotator_b: explicit state/process tomography
+https://openalex.org/W1974169933,https://openalex.org/W2083998576,0,,independent_lineage_human_annotation,annotator_a: unrelated transmon control | annotator_b: unrelated transmon control
+https://openalex.org/W1988974364,https://openalex.org/W2035510778,0,,independent_lineage_human_annotation,"annotator_a: quantum computing, not tomo | annotator_b: quantum computing, not tomo"
+https://openalex.org/W1988974364,https://openalex.org/W2076576914,0,,independent_lineage_human_annotation,annotator_a: too broad / overview | annotator_b: too broad / overview
+https://openalex.org/W1988974364,https://openalex.org/W4213379151,0,,independent_lineage_human_annotation,"annotator_a: simulation hardware, not tomo | annotator_b: simulation hardware, not tomo"
+https://openalex.org/W1988974364,https://openalex.org/W4281550036,0,,independent_lineage_human_annotation,"annotator_a: Grover optimization, not tomo | annotator_b: Grover optimization, not tomo"
+https://openalex.org/W2027919910,https://openalex.org/W1976264255,0,,independent_lineage_human_annotation,"annotator_a: generic CS, not quantum workflow | annotator_b: generic CS, not quantum workflow"
+https://openalex.org/W2027919910,https://openalex.org/W2051669075,2,0.950000,independent_lineage_human_annotation,annotator_a: direct compressed-sensing tomography | annotator_b: direct compressed-sensing tomography
+https://openalex.org/W2027919910,https://openalex.org/W37221705,1,,independent_lineage_human_annotation,annotator_a: compressed sensing nearby | annotator_b: compressed sensing nearby
+https://openalex.org/W2047498859,https://openalex.org/W1977428899,2,0.950000,independent_lineage_human_annotation,annotator_a: direct detector characterization | annotator_b: direct detector characterization
+https://openalex.org/W2047498859,https://openalex.org/W1981122241,0,,independent_lineage_human_annotation,annotator_a: not detector tomography | annotator_b: not detector tomography
+https://openalex.org/W2047498859,https://openalex.org/W1984964553,1,,independent_lineage_human_annotation,annotator_a: process tomo adjacent | annotator_b: process tomo adjacent
+https://openalex.org/W2047498859,https://openalex.org/W2787730491,1,,independent_lineage_human_annotation,annotator_a: broad adjacent review | annotator_b: broad adjacent review
+https://openalex.org/W2764035156,https://openalex.org/W1631356911,1,,independent_lineage_human_annotation,annotator_a: foundational but too broad | annotator_b: foundational but too broad
+https://openalex.org/W2764035156,https://openalex.org/W1964028587,1,,independent_lineage_human_annotation,annotator_a: foundational state tomography | annotator_b: foundational state tomography
+https://openalex.org/W2764035156,https://openalex.org/W220930132,0,,independent_lineage_human_annotation,annotator_a: SQUID physics unrelated | annotator_b: SQUID physics unrelated
+https://openalex.org/W2764035156,https://openalex.org/W2950018025,0,,independent_lineage_human_annotation,annotator_a: entanglement criteria only | annotator_b: entanglement criteria only
+https://openalex.org/W2941673255,https://openalex.org/W138436589,0,,independent_lineage_human_annotation,annotator_a: free-space optics unrelated | annotator_b: free-space optics unrelated
+https://openalex.org/W2941673255,https://openalex.org/W1631356911,1,,independent_lineage_human_annotation,annotator_a: foundational but broad | annotator_b: foundational but broad
+https://openalex.org/W2941673255,https://openalex.org/W1984964553,2,0.950000,independent_lineage_human_annotation,annotator_a: direct tomography method | annotator_b: direct tomography method
+https://openalex.org/W2941673255,https://openalex.org/W1986929019,0,,independent_lineage_human_annotation,annotator_a: entanglement topic unrelated | annotator_b: entanglement topic unrelated
+https://openalex.org/W2941673255,https://openalex.org/W1996938127,0,,independent_lineage_human_annotation,annotator_a: IBM corporate history | annotator_b: IBM corporate history
+https://openalex.org/W2941673255,https://openalex.org/W2044344400,0,,independent_lineage_human_annotation,annotator_a: IBM history only | annotator_b: IBM history only
+https://openalex.org/W2941673255,https://openalex.org/W2989761958,0,,independent_lineage_human_annotation,annotator_a: qubit-cavity dynamics unrelated | annotator_b: qubit-cavity dynamics unrelated
+https://openalex.org/W2941673255,https://openalex.org/W3126131865,0,,independent_lineage_human_annotation,annotator_a: IBM corporate history | annotator_b: IBM corporate history
+https://openalex.org/W3206040918,https://openalex.org/W1978545431,1,,independent_lineage_human_annotation,"annotator_a: QEC lineage, broad | annotator_b: QEC lineage, broad"
+https://openalex.org/W3206040918,https://openalex.org/W2372149058,1,,independent_lineage_human_annotation,annotator_a: QEC implementation adjacent | annotator_b: QEC implementation adjacent
+https://openalex.org/W3206040918,https://openalex.org/W2761090343,1,,independent_lineage_human_annotation,annotator_a: QEC noise-estimation adjacent | annotator_b: QEC noise-estimation adjacent
+https://openalex.org/W3206040918,https://openalex.org/W3205416935,1,,independent_lineage_human_annotation,"annotator_a: tomography adjacent, broad | annotator_b: tomography adjacent, broad"
+https://openalex.org/W3206040918,https://openalex.org/W4212962264,2,0.950000,independent_lineage_human_annotation,annotator_a: direct QEC/measurement overlap | annotator_b: direct QEC/measurement overlap
+https://openalex.org/W3206040918,https://openalex.org/W4221164995,0,,independent_lineage_human_annotation,annotator_a: off-topic thermodynamics/info | annotator_b: off-topic thermodynamics/info
+https://openalex.org/W3206040918,https://openalex.org/W4293752651,0,,independent_lineage_human_annotation,annotator_a: too broad stochastic theory | annotator_b: too broad stochastic theory
+https://openalex.org/W3206040918,https://openalex.org/W4388540582,1,,independent_lineage_human_annotation,annotator_a: error suppression adjacent | annotator_b: error suppression adjacent
+https://openalex.org/W4289253527,https://openalex.org/W2122339379,2,0.950000,independent_lineage_human_annotation,annotator_a: direct measurement+tomo | annotator_b: direct measurement+tomo
+https://openalex.org/W4289253527,https://openalex.org/W2141398656,1,,independent_lineage_human_annotation,annotator_a: broad tomo tutorial | annotator_b: broad tomo tutorial
+https://openalex.org/W4289253527,https://openalex.org/W2895591481,1,,independent_lineage_human_annotation,annotator_a: broad tomo tutorial | annotator_b: broad tomo tutorial
+https://openalex.org/W4289253527,https://openalex.org/W2950844595,2,0.950000,independent_lineage_human_annotation,annotator_a: direct SPAM tomography | annotator_b: direct SPAM tomography
+https://openalex.org/W4289253527,https://openalex.org/W2952761342,2,0.950000,independent_lineage_human_annotation,annotator_a: direct measurement theory | annotator_b: direct measurement theory
+https://openalex.org/W4289253527,https://openalex.org/W3204602721,2,0.950000,independent_lineage_human_annotation,annotator_a: direct measurement tomography | annotator_b: direct measurement tomography
+https://openalex.org/W4289253527,https://openalex.org/W4376654450,1,,independent_lineage_human_annotation,annotator_a: state estimation adjacent | annotator_b: state estimation adjacent
+https://openalex.org/W4289253527,https://openalex.org/W4386081343,1,,independent_lineage_human_annotation,"annotator_a: tomo method, weaker lineage | annotator_b: tomo method, weaker lineage"
+https://openalex.org/W4289253527,https://openalex.org/W4386498904,1,,independent_lineage_human_annotation,annotator_a: measurement adjacent | annotator_b: measurement adjacent
+https://openalex.org/W4407956601,https://openalex.org/W1540371141,0,,independent_lineage_human_annotation,annotator_a: generic ML boosting | annotator_b: generic ML boosting
+https://openalex.org/W4407956601,https://openalex.org/W1965928854,2,0.950000,independent_lineage_human_annotation,annotator_a: foundational process tomography | annotator_b: foundational process tomography
+https://openalex.org/W4407956601,https://openalex.org/W2147697413,0,,independent_lineage_human_annotation,annotator_a: generic ML boosting | annotator_b: generic ML boosting
+https://openalex.org/W4407956601,https://openalex.org/W2556012038,0,,independent_lineage_human_annotation,annotator_a: generic ML boosting | annotator_b: generic ML boosting
+https://openalex.org/W4407956601,https://openalex.org/W3120198719,0,,independent_lineage_human_annotation,annotator_a: teleportation unrelated | annotator_b: teleportation unrelated
+https://openalex.org/W4407956601,https://openalex.org/W4231274751,0,,independent_lineage_human_annotation,annotator_a: generic ML boosting | annotator_b: generic ML boosting
+https://openalex.org/W4407956601,https://openalex.org/W4308501803,0,,independent_lineage_human_annotation,annotator_a: teleportation unrelated | annotator_b: teleportation unrelated
+https://openalex.org/W4407956601,https://openalex.org/W4376133069,0,,independent_lineage_human_annotation,annotator_a: teleportation unrelated | annotator_b: teleportation unrelated

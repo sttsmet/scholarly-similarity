@@ -1,0 +1,11 @@
+{
+  "eval_preset_id": "eval_preset_002_boundary_harder",
+  "created_at": "2026-04-03T10:45:00Z",
+  "max_references": 10,
+  "max_related": 20,
+  "max_hard_negatives": 20,
+  "top_k": 10,
+  "label_source": "silver",
+  "refresh": false,
+  "description": "Harder boundary eval with larger related and hard-negative pools while preserving the same theory snapshot and top_k"
+}

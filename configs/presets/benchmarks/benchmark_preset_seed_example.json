@@ -1,0 +1,12 @@
+{
+  "benchmark_preset_id": "benchmark_preset_seed_example",
+  "seeds_csv": "data/benchmarks/seed_set_example.csv",
+  "created_at": "2026-04-05T13:00:00Z",
+  "description": "Example materialized seed cycle from accepted verifier reply",
+  "tags": [
+    "detector_tomography",
+    "process_tomography",
+    "seed_cycle_materialized",
+    "state_tomography"
+  ]
+}

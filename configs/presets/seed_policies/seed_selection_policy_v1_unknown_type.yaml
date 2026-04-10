@@ -1,0 +1,96 @@
+policy_type: seed_selection_policy
+schema_version: 1
+policy_id: seed_selection_policy_v1_unknown_type
+created_at: "2026-04-06T00:00:00Z"
+description: >
+  Policy variant for deterministic seed-pool review when the current local
+  OpenAlex/Neo4j source does not yet carry reliable work-type metadata.
+  Empty candidate type values are normalized upstream to "unknown", and this
+  policy allows both article and unknown during packet construction.
+
+source_constraints:
+  source_system: neo4j_openalex_local
+  require_doi: true
+  require_openalex_resolved: true
+  allow_freeform_doi_additions: false
+
+candidate_pool_csv_columns:
+  - candidate_id
+  - doi
+  - title
+  - proposed_tag
+  - secondary_tag_hints
+  - publication_year
+  - type
+  - openalex_resolved
+  - citation_count
+  - referenced_works_count
+  - graph_boundary_score
+  - graph_centrality_score
+  - duplicate_cluster_id
+  - source_snapshot_id
+
+candidate_pool_requirements:
+  allowed_types: [article, unknown]
+  exclude_types: [review, editorial, erratum, paratext]
+  exclude_retracted: true
+  min_publication_year: 1990
+  min_referenced_works_count: 10
+  min_cited_by_count: 5
+
+review_flow:
+  pass_1: tag_local_shortlist
+  pass_2: cross_tag_final_selection
+  pass_3: benchmark_repair_after_pilot
+
+selection_targets:
+  final_target_total: 48
+  min_total: 36
+  max_total: 60
+  per_tag_default:
+    min: 8
+    max: 16
+  role_mix:
+    anchor_min: 12
+    boundary_min: 16
+    sentinel_min: 6
+
+selection_rules:
+  no_duplicate_doi: true
+  no_duplicate_candidate_id: true
+  no_duplicate_cluster_overflow: true
+  require_reason_codes: true
+  require_selected_from_packet_only: true
+  allow_hold_status: true
+
+output_contract:
+  seeds_csv_columns: [doi, tag]
+  manifest_required: true
+  write_benchmark_preset: true
+  write_launch_profile: true
+  write_provenance_manifest: true
+
+reason_code_catalog:
+  keep:
+    - foundational
+    - high_boundary_value
+    - sentinel_case
+    - cross_tag_useful
+    - modern_case
+    - openalex_stable
+    - good_graph_neighborhood
+    - role_balance_needed
+  reject:
+    - duplicate_cluster
+    - duplicate_topic_signal
+    - too_broad
+    - too_narrow
+    - weak_boundary_value
+    - weak_graph_neighborhood
+    - unstable_openalex_resolution
+    - excluded_type
+
+reply_status_catalog:
+  - ready_for_cycle
+  - needs_expansion
+  - reject_packet

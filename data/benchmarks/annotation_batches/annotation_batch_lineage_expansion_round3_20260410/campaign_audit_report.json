@@ -1,0 +1,551 @@
+{
+  "batch_design": {
+    "annotator_ids": [
+      "annotator_a",
+      "annotator_b"
+    ],
+    "exported_pair_count": 80,
+    "overlap_pair_count": 40,
+    "per_seed_quota": 8,
+    "per_seed_quota_overrides": {
+      "https://openalex.org/W4289253527": 10
+    },
+    "planned_overlap_ratio": 0.5,
+    "quota_policy_note": "Reserved indirect_lineage, provenance_weak, and hard_negative_or_distractor first; then filled ambiguous_middle; then filled strong_lineage last.",
+    "realized_overlap_ratio": 0.5,
+    "realized_strata_counts": {
+      "ambiguous_middle": 28,
+      "hard_negative_or_distractor": 24,
+      "indirect_lineage": 8,
+      "provenance_weak": 8,
+      "strong_lineage": 12
+    },
+    "requested_per_stratum_quotas": {
+      "ambiguous_middle": 28,
+      "hard_negative_or_distractor": 24,
+      "indirect_lineage": 8,
+      "provenance_weak": 8,
+      "strong_lineage": 12
+    },
+    "selection_stage_order": [
+      "indirect_lineage",
+      "provenance_weak",
+      "hard_negative_or_distractor",
+      "ambiguous_middle",
+      "strong_lineage"
+    ],
+    "target_pair_count": 80
+  },
+  "batch_dir": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410",
+  "batch_id": "annotation_batch_lineage_expansion_round3_20260410",
+  "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round3_v1",
+  "campaign_audit": {
+    "exported_unique_pair_count": 80,
+    "indirect_lineage_surfaced": true,
+    "meaningfully_less_shortcut_shaped_than_round2": true,
+    "new_runs_were_created": true,
+    "overlap_pair_count": 40,
+    "per_seed_counts": {
+      "https://openalex.org/W1971487905": 8,
+      "https://openalex.org/W1974169933": 7,
+      "https://openalex.org/W1988974364": 8,
+      "https://openalex.org/W2027919910": 7,
+      "https://openalex.org/W2047498859": 8,
+      "https://openalex.org/W2764035156": 8,
+      "https://openalex.org/W2941673255": 8,
+      "https://openalex.org/W3206040918": 8,
+      "https://openalex.org/W4289253527": 10,
+      "https://openalex.org/W4407956601": 8
+    },
+    "planned_overlap_ratio": 0.5,
+    "realized_overlap_ratio": 0.5,
+    "round2_comparison": {
+      "round2_exported_pair_count": 60,
+      "round2_indirect_share": 0.0,
+      "round2_strata_counts": {
+        "ambiguous_middle": 18,
+        "hard_negative_or_distractor": 20,
+        "indirect_lineage": 0,
+        "provenance_weak": 8,
+        "strong_lineage": 14
+      },
+      "round2_strong_share": 0.233333,
+      "round3_indirect_share": 0.1,
+      "round3_strong_share": 0.15
+    },
+    "selected_seeds": [
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/PhysRevResearch.7.013208",
+        "seed_openalex_id": "https://openalex.org/W4407956601",
+        "seed_title": "Boosting projective methods for quantum process and detector tomography",
+        "source_available": {
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 3,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1103_physrevresearch_7_013208__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/PRXQuantum.3.030318",
+        "seed_openalex_id": "https://openalex.org/W3206040918",
+        "seed_title": "Characterizing Quantum Instruments: From Nondemolition Measurements to Quantum Error Correction",
+        "source_available": {
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 4,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 9
+        },
+        "source_run_ids": [
+          "doi_10_1103_prxquantum_3_030318__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1126/science.1162086",
+        "seed_openalex_id": "https://openalex.org/W1971487905",
+        "seed_title": "Complete Characterization of Quantum-Optical Processes",
+        "source_available": {
+          "ambiguous_middle": 6,
+          "hard_negative_or_distractor": 5,
+          "indirect_lineage": 4,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1126_science_1162086__refs_0__related_20__hardneg_20",
+          "doi_10_1126_science_1162086__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/PhysRevA.100.052315",
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "seed_title": "Detector tomography on IBM quantum computers and mitigation of an imperfect measurement",
+        "source_available": {
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 9,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_100_052315__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 10,
+        "query_doi": "10.1038/nphys1170",
+        "seed_openalex_id": "https://openalex.org/W4289253527",
+        "seed_title": "Measured measurement",
+        "source_available": {
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 12,
+          "indirect_lineage": 0,
+          "provenance_weak": 8,
+          "strong_lineage": 0
+        },
+        "source_run_ids": [
+          "doi_10_1038_nphys1170__refs_0__related_10__hardneg_10",
+          "doi_10_1038_nphys1170__refs_10__related_10",
+          "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/physreva.64.052312",
+        "seed_openalex_id": "https://openalex.org/W2764035156",
+        "seed_title": "Measurement of qubits",
+        "source_available": {
+          "ambiguous_middle": 6,
+          "hard_negative_or_distractor": 5,
+          "indirect_lineage": 1,
+          "provenance_weak": 0,
+          "strong_lineage": 11
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_64_052312__refs_0__related_20__hardneg_20",
+          "doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 7,
+        "query_doi": "10.1103/PhysRevA.87.030102",
+        "seed_openalex_id": "https://openalex.org/W2027919910",
+        "seed_title": "Quantum state tomography by continuous measurement and compressed sensing",
+        "source_available": {
+          "ambiguous_middle": 8,
+          "hard_negative_or_distractor": 13,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 11
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_87_030102__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/physreva.77.032322",
+        "seed_openalex_id": "https://openalex.org/W1988974364",
+        "seed_title": "Quantum-process tomography: Resource analysis of different strategies",
+        "source_available": {
+          "ambiguous_middle": 5,
+          "hard_negative_or_distractor": 15,
+          "indirect_lineage": 4,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_77_032322__refs_0__related_20__hardneg_20",
+          "doi_10_1103_physreva_77_032322__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 7,
+        "query_doi": "10.1103/PhysRevA.87.062119",
+        "seed_openalex_id": "https://openalex.org/W1974169933",
+        "seed_title": "Self-consistent quantum process tomography",
+        "source_available": {
+          "ambiguous_middle": 9,
+          "hard_negative_or_distractor": 10,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 11
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_87_062119__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1038/nphys1133",
+        "seed_openalex_id": "https://openalex.org/W2047498859",
+        "seed_title": "Tomography of quantum detectors",
+        "source_available": {
+          "ambiguous_middle": 8,
+          "hard_negative_or_distractor": 8,
+          "indirect_lineage": 1,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1038_nphys1133__refs_0__related_20__hardneg_20",
+          "doi_10_1038_nphys1133__refs_10__related_20__hardneg_20"
+        ]
+      }
+    ],
+    "shortfall_warnings": [],
+    "source_runs": [
+      "doi_10_1103_physreva_77_032322__refs_0__related_20__hardneg_20",
+      "doi_10_1103_physreva_77_032322__refs_10__related_20__hardneg_20",
+      "doi_10_1126_science_1162086__refs_0__related_20__hardneg_20",
+      "doi_10_1126_science_1162086__refs_10__related_20__hardneg_20",
+      "doi_10_1038_nphys1133__refs_0__related_20__hardneg_20",
+      "doi_10_1038_nphys1133__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physreva_64_052312__refs_0__related_20__hardneg_20",
+      "doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20",
+      "doi_10_1038_nphys1170__refs_10__related_10",
+      "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10",
+      "doi_10_1038_nphys1170__refs_0__related_10__hardneg_10",
+      "doi_10_1103_physreva_87_030102__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physreva_87_062119__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physreva_100_052315__refs_10__related_20__hardneg_20",
+      "doi_10_1103_prxquantum_3_030318__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physrevresearch_7_013208__refs_10__related_20__hardneg_20"
+    ],
+    "stratum_counts": {
+      "ambiguous_middle": 28,
+      "hard_negative_or_distractor": 24,
+      "indirect_lineage": 8,
+      "provenance_weak": 8,
+      "strong_lineage": 12
+    }
+  },
+  "generated_at": "2026-04-10T12:09:23.854850+00:00",
+  "recommendation": {
+    "choice": "Proceed to human annotation.",
+    "rationale": "This batch materially broadens the evidence mix by surfacing exporter-visible indirect_lineage while preserving the only available provenance_weak seed and keeping strong_lineage as the smallest stratum."
+  },
+  "source_pool_audit": {
+    "best_hard_negative_sources": [
+      {
+        "hard_negative_or_distractor_available": 15,
+        "run_id": "doi_10_1103_physreva_77_032322__refs_10__related_20__hardneg_20",
+        "seed_openalex_id": "https://openalex.org/W1988974364",
+        "seed_title": "Quantum-process tomography: Resource analysis of different strategies"
+      },
+      {
+        "hard_negative_or_distractor_available": 13,
+        "run_id": "doi_10_1103_physreva_87_030102__refs_10__related_20__hardneg_20",
+        "seed_openalex_id": "https://openalex.org/W2027919910",
+        "seed_title": "Quantum state tomography by continuous measurement and compressed sensing"
+      },
+      {
+        "hard_negative_or_distractor_available": 12,
+        "run_id": "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10",
+        "seed_openalex_id": "https://openalex.org/W4289253527",
+        "seed_title": "Measured measurement"
+      },
+      {
+        "hard_negative_or_distractor_available": 10,
+        "run_id": "doi_10_1103_physreva_87_062119__refs_10__related_20__hardneg_20",
+        "seed_openalex_id": "https://openalex.org/W1974169933",
+        "seed_title": "Self-consistent quantum process tomography"
+      }
+    ],
+    "best_indirect_lineage_sources": [
+      {
+        "indirect_lineage_available": 4,
+        "run_id": "doi_10_1103_physreva_77_032322__refs_0__related_20__hardneg_20",
+        "seed_openalex_id": "https://openalex.org/W1988974364",
+        "seed_title": "Quantum-process tomography: Resource analysis of different strategies"
+      },
+      {
+        "indirect_lineage_available": 4,
+        "run_id": "doi_10_1126_science_1162086__refs_0__related_20__hardneg_20",
+        "seed_openalex_id": "https://openalex.org/W1971487905",
+        "seed_title": "Complete Characterization of Quantum-Optical Processes"
+      },
+      {
+        "indirect_lineage_available": 1,
+        "run_id": "doi_10_1038_nphys1133__refs_0__related_20__hardneg_20",
+        "seed_openalex_id": "https://openalex.org/W2047498859",
+        "seed_title": "Tomography of quantum detectors"
+      },
+      {
+        "indirect_lineage_available": 1,
+        "run_id": "doi_10_1103_physreva_64_052312__refs_0__related_20__hardneg_20",
+        "seed_openalex_id": "https://openalex.org/W2764035156",
+        "seed_title": "Measurement of qubits"
+      }
+    ],
+    "best_provenance_weak_sources": [
+      {
+        "provenance_weak_available": 8,
+        "run_id": "doi_10_1038_nphys1170__refs_10__related_10",
+        "seed_openalex_id": "https://openalex.org/W4289253527",
+        "seed_title": "Measured measurement"
+      }
+    ],
+    "indirect_absence_explanation_before_enrichment": "In the pre-enrichment top-level exportable pool, seed_related items were usually either co-tagged as direct_neighbor, which the exporter maps to strong_lineage, or they first appeared below rank 5, which the exporter maps to ambiguous_middle instead of indirect_lineage.",
+    "indirect_surface_mechanism_after_enrichment": "The new refs=0 runs removed seed_reference candidates for cached seeds, allowing pure seed_related rows to rise into ranks 1-5 without changing scorer logic or feature formulas.",
+    "inspected_rank_ready_run_count_after_enrichment": 46,
+    "inspected_rank_ready_run_count_before_enrichment": 41,
+    "limitations": [
+      "Only a cache-backed subset of seeds could be rebuilt safely with refs=0 in this environment; other seeds would require live DOI resolution.",
+      "All currently exportable provenance_weak supply still comes from a single seed (https://openalex.org/W4289253527).",
+      "The stock exporter does not reserve strata in the requested order; this batch therefore used the same CSV/manifest helpers with a no-code orchestration script that selected strata in the requested reserve-first order."
+    ],
+    "new_rank_ready_run_count": 5,
+    "new_rank_ready_run_ids": [
+      "doi_10_1038_nphys1133__refs_0__related_20__hardneg_20",
+      "doi_10_1103_physreva_64_052312__refs_0__related_20__hardneg_20",
+      "doi_10_1038_nphys1170__refs_0__related_10__hardneg_10",
+      "doi_10_1103_physreva_77_032322__refs_0__related_20__hardneg_20",
+      "doi_10_1126_science_1162086__refs_0__related_20__hardneg_20"
+    ],
+    "new_runs_created": true,
+    "selected_pool_by_seed": [
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/PhysRevResearch.7.013208",
+        "seed_openalex_id": "https://openalex.org/W4407956601",
+        "seed_title": "Boosting projective methods for quantum process and detector tomography",
+        "source_available": {
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 3,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1103_physrevresearch_7_013208__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/PRXQuantum.3.030318",
+        "seed_openalex_id": "https://openalex.org/W3206040918",
+        "seed_title": "Characterizing Quantum Instruments: From Nondemolition Measurements to Quantum Error Correction",
+        "source_available": {
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 4,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 9
+        },
+        "source_run_ids": [
+          "doi_10_1103_prxquantum_3_030318__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1126/science.1162086",
+        "seed_openalex_id": "https://openalex.org/W1971487905",
+        "seed_title": "Complete Characterization of Quantum-Optical Processes",
+        "source_available": {
+          "ambiguous_middle": 6,
+          "hard_negative_or_distractor": 5,
+          "indirect_lineage": 4,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1126_science_1162086__refs_0__related_20__hardneg_20",
+          "doi_10_1126_science_1162086__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/PhysRevA.100.052315",
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "seed_title": "Detector tomography on IBM quantum computers and mitigation of an imperfect measurement",
+        "source_available": {
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 9,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_100_052315__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 10,
+        "query_doi": "10.1038/nphys1170",
+        "seed_openalex_id": "https://openalex.org/W4289253527",
+        "seed_title": "Measured measurement",
+        "source_available": {
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 12,
+          "indirect_lineage": 0,
+          "provenance_weak": 8,
+          "strong_lineage": 0
+        },
+        "source_run_ids": [
+          "doi_10_1038_nphys1170__refs_0__related_10__hardneg_10",
+          "doi_10_1038_nphys1170__refs_10__related_10",
+          "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/physreva.64.052312",
+        "seed_openalex_id": "https://openalex.org/W2764035156",
+        "seed_title": "Measurement of qubits",
+        "source_available": {
+          "ambiguous_middle": 6,
+          "hard_negative_or_distractor": 5,
+          "indirect_lineage": 1,
+          "provenance_weak": 0,
+          "strong_lineage": 11
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_64_052312__refs_0__related_20__hardneg_20",
+          "doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 7,
+        "query_doi": "10.1103/PhysRevA.87.030102",
+        "seed_openalex_id": "https://openalex.org/W2027919910",
+        "seed_title": "Quantum state tomography by continuous measurement and compressed sensing",
+        "source_available": {
+          "ambiguous_middle": 8,
+          "hard_negative_or_distractor": 13,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 11
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_87_030102__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1103/physreva.77.032322",
+        "seed_openalex_id": "https://openalex.org/W1988974364",
+        "seed_title": "Quantum-process tomography: Resource analysis of different strategies",
+        "source_available": {
+          "ambiguous_middle": 5,
+          "hard_negative_or_distractor": 15,
+          "indirect_lineage": 4,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_77_032322__refs_0__related_20__hardneg_20",
+          "doi_10_1103_physreva_77_032322__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 7,
+        "query_doi": "10.1103/PhysRevA.87.062119",
+        "seed_openalex_id": "https://openalex.org/W1974169933",
+        "seed_title": "Self-consistent quantum process tomography",
+        "source_available": {
+          "ambiguous_middle": 9,
+          "hard_negative_or_distractor": 10,
+          "indirect_lineage": 0,
+          "provenance_weak": 0,
+          "strong_lineage": 11
+        },
+        "source_run_ids": [
+          "doi_10_1103_physreva_87_062119__refs_10__related_20__hardneg_20"
+        ]
+      },
+      {
+        "exported_pair_count": 8,
+        "query_doi": "10.1038/nphys1133",
+        "seed_openalex_id": "https://openalex.org/W2047498859",
+        "seed_title": "Tomography of quantum detectors",
+        "source_available": {
+          "ambiguous_middle": 8,
+          "hard_negative_or_distractor": 8,
+          "indirect_lineage": 1,
+          "provenance_weak": 0,
+          "strong_lineage": 10
+        },
+        "source_run_ids": [
+          "doi_10_1038_nphys1133__refs_0__related_20__hardneg_20",
+          "doi_10_1038_nphys1133__refs_10__related_20__hardneg_20"
+        ]
+      }
+    ],
+    "selected_pool_global_availability": {
+      "ambiguous_middle": 82,
+      "hard_negative_or_distractor": 84,
+      "indirect_lineage": 10,
+      "provenance_weak": 8,
+      "strong_lineage": 92
+    },
+    "selected_source_run_count": 16,
+    "selected_source_run_ids": [
+      "doi_10_1103_physreva_77_032322__refs_0__related_20__hardneg_20",
+      "doi_10_1103_physreva_77_032322__refs_10__related_20__hardneg_20",
+      "doi_10_1126_science_1162086__refs_0__related_20__hardneg_20",
+      "doi_10_1126_science_1162086__refs_10__related_20__hardneg_20",
+      "doi_10_1038_nphys1133__refs_0__related_20__hardneg_20",
+      "doi_10_1038_nphys1133__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physreva_64_052312__refs_0__related_20__hardneg_20",
+      "doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20",
+      "doi_10_1038_nphys1170__refs_10__related_10",
+      "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10",
+      "doi_10_1038_nphys1170__refs_0__related_10__hardneg_10",
+      "doi_10_1103_physreva_87_030102__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physreva_87_062119__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physreva_100_052315__refs_10__related_20__hardneg_20",
+      "doi_10_1103_prxquantum_3_030318__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physrevresearch_7_013208__refs_10__related_20__hardneg_20"
+    ],
+    "selected_unique_seed_count": 10
+  }
+}

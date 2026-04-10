@@ -1,0 +1,452 @@
+{
+  "generated_at": "2026-04-10T13:27:39.084869+00:00",
+  "batch_id": "annotation_batch_lineage_expansion_round3_20260410",
+  "batch_dir": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410",
+  "discovered_files": [
+    "annotation_batch_manifest.json",
+    "annotator_a.csv",
+    "annotator_b.completed.round3_revA_20260410.csv",
+    "annotator_b.completed.round3_revB_20260410.csv",
+    "annotator_b.csv",
+    "campaign_audit_report.json",
+    "campaign_handoff_summary.md",
+    "pair_assignments.jsonl",
+    "round3_validation_report_20260410.json"
+  ],
+  "completed_annotator_csvs": [
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_b.completed.round3_revA_20260410.csv",
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_b.completed.round3_revB_20260410.csv"
+  ],
+  "adjudication_csvs_present_in_batch_dir": [],
+  "validation": {
+    "schema_valid": true,
+    "duplicate_rows_detected": false,
+    "annotator_identity_consistent_by_row": true,
+    "filename_prefix_mismatch_detected": true,
+    "label_values_valid": true,
+    "unsupported_textual_confidence_values_found": 0,
+    "out_of_range_confidence_values_found": 0,
+    "strict_workflow_loadable": true
+  },
+  "file_summaries": {
+    "annotator_b.completed.round3_revA_20260410.csv": {
+      "row_count": 60,
+      "labeled_row_count": 60,
+      "annotator_ids_seen": {
+        "annotator_a": 60
+      },
+      "confidence_cells": {
+        "blank": 49,
+        "numeric": 11
+      }
+    },
+    "annotator_b.completed.round3_revB_20260410.csv": {
+      "row_count": 60,
+      "labeled_row_count": 60,
+      "annotator_ids_seen": {
+        "annotator_b": 60
+      },
+      "confidence_cells": {
+        "blank": 49,
+        "numeric": 11
+      }
+    }
+  },
+  "issues": {
+    "missing_columns": {
+      "annotator_b.completed.round3_revA_20260410.csv": [],
+      "annotator_b.completed.round3_revB_20260410.csv": []
+    },
+    "duplicates_within_file": [],
+    "invalid_label_rows": [],
+    "invalid_adjudicated_label_rows": [],
+    "unsupported_textual_confidence_rows": [],
+    "out_of_range_confidence_rows": [],
+    "missing_annotator_rows": [],
+    "aspect_mismatch_rows": [],
+    "filename_prefix_mismatch_rows": [
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 2,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 3,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 4,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 5,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 6,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 7,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 8,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 9,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 10,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 11,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 12,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 13,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 14,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 15,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 16,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 17,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 18,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 19,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 20,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 21,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 22,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 23,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 24,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 25,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 26,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 27,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 28,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 29,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 30,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 31,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 32,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 33,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 34,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 35,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 36,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 37,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 38,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 39,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 40,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 41,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 42,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 43,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 44,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 45,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 46,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 47,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 48,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 49,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 50,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 51,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 52,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 53,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 54,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 55,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 56,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 57,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 58,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 59,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 60,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      },
+      {
+        "file": "annotator_b.completed.round3_revA_20260410.csv",
+        "row": 61,
+        "annotator_id": "annotator_a",
+        "file_prefix": "annotator_b"
+      }
+    ]
+  },
+  "pairwise_summary": {
+    "total_nonblank_rows": 120,
+    "unique_pair_count_with_any_label": 60,
+    "overlap_pair_count": 60,
+    "exact_match_pair_count": 60,
+    "disagreement_pair_count": 0,
+    "resolved_conflict_pair_count": 0,
+    "unresolved_conflict_pair_count": 0,
+    "agreement_rate_before_adjudication": 1.0
+  },
+  "materialization_status": {
+    "materialization_permitted": false,
+    "blocking_reason": "0 unresolved conflict pairs remain."
+  },
+  "adjudication_export": {
+    "adjudication_id": "adjudication_batch_lineage_expansion_round3_20260410_current",
+    "adjudication_dir": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_batch_lineage_expansion_round3_20260410_current",
+    "adjudication_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_batch_lineage_expansion_round3_20260410_current/conflict_adjudication_manifest.json",
+    "template_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_batch_lineage_expansion_round3_20260410_current/conflict_adjudication_template.csv",
+    "conflict_pair_count": 0
+  },
+  "unresolved_conflict_examples": []
+}

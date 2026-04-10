@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-04-10T11:47:15.376330+00:00",
+  "round2_validation_report_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409/round2_validation_report_20260410.json",
+  "pilot_dataset": {
+    "benchmark_dataset_id": "benchmark_dataset_lineage_pilot_v1",
+    "benchmark_labels_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_pilot_v1/benchmark_labels.csv",
+    "benchmark_dataset_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_pilot_v1/benchmark_dataset_manifest.json",
+    "benchmark_labels_row_count": 70,
+    "seed_count": 7,
+    "label_distribution": {
+      "0": 38,
+      "1": 22,
+      "2": 10
+    },
+    "agreement_summary": {
+      "agreement_rate": 0.938776,
+      "disagreement_pair_count": 3,
+      "exact_match_pair_count": 46,
+      "metric_name": "raw_pair_agreement",
+      "overlap_pair_count": 49
+    },
+    "benchmark_maturity_tier": "pilot",
+    "promotion_ready": false
+  },
+  "round2_dataset": {
+    "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round2_v1",
+    "benchmark_labels_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/benchmark_labels.csv",
+    "benchmark_dataset_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/benchmark_dataset_manifest.json",
+    "benchmark_preset_path": "/home/stts/projects/scholarly-similarity/configs/presets/benchmarks/benchmark_preset_independent_lineage_expansion_round2_v1.json",
+    "benchmark_labels_row_count": 60,
+    "seed_count": 9,
+    "label_distribution": {
+      "0": 22,
+      "1": 24,
+      "2": 14
+    },
+    "agreement_summary": {
+      "agreement_rate": 0.833333,
+      "disagreement_pair_count": 6,
+      "exact_match_pair_count": 30,
+      "metric_name": "raw_pair_agreement",
+      "overlap_pair_count": 36
+    },
+    "conflict_pair_count": 6,
+    "adjudicated_conflict_count": 6,
+    "adjudication_complete": true,
+    "benchmark_maturity_tier": "pilot",
+    "promotion_ready": false,
+    "promotion_ineligibility_reasons": [
+      "At least 10 labeled seeds are required for promotion-ready maturity.",
+      "At least 150 labeled pairs are required for promotion-ready maturity."
+    ],
+    "per_seed_counts": {
+      "https://openalex.org/W1971384536": 5,
+      "https://openalex.org/W1971487905": 6,
+      "https://openalex.org/W2047498859": 6,
+      "https://openalex.org/W2764035156": 4,
+      "https://openalex.org/W2941673255": 8,
+      "https://openalex.org/W3206040918": 5,
+      "https://openalex.org/W4289253527": 16,
+      "https://openalex.org/W4323075702": 4,
+      "https://openalex.org/W4407956601": 6
+    },
+    "annotator_ids": [
+      "adjudicator",
+      "annotator_a",
+      "annotator_b"
+    ],
+    "annotator_count": 3,
+    "multi_annotated_pair_count": 36,
+    "overlap_pair_count": 36
+  },
+  "comparison_vs_pilot": {
+    "pair_count_delta": -10,
+    "seed_count_delta": 2,
+    "label_distribution_delta": {
+      "0": -16,
+      "1": 2,
+      "2": 4
+    },
+    "overlap_with_pilot_pair_count": 39,
+    "inter_round_label_disagreement_pair_count": 16,
+    "inter_round_label_disagreements": [
+      {
+        "seed_openalex_id": "https://openalex.org/W1971384536",
+        "candidate_openalex_id": "https://openalex.org/W1565578464",
+        "pilot_label": "1",
+        "round2_label": "0"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W1971384536",
+        "candidate_openalex_id": "https://openalex.org/W1922629554",
+        "pilot_label": "1",
+        "round2_label": "0"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W1971384536",
+        "candidate_openalex_id": "https://openalex.org/W37221705",
+        "pilot_label": "1",
+        "round2_label": "2"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W1971384536",
+        "candidate_openalex_id": "https://openalex.org/W4390136457",
+        "pilot_label": "1",
+        "round2_label": "2"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W1971487905",
+        "candidate_openalex_id": "https://openalex.org/W1974753956",
+        "pilot_label": "0",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2047498859",
+        "candidate_openalex_id": "https://openalex.org/W1965928854",
+        "pilot_label": "2",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2047498859",
+        "candidate_openalex_id": "https://openalex.org/W1977428899",
+        "pilot_label": "2",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2047498859",
+        "candidate_openalex_id": "https://openalex.org/W2787730491",
+        "pilot_label": "0",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2764035156",
+        "candidate_openalex_id": "https://openalex.org/W1529627758",
+        "pilot_label": "0",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2764035156",
+        "candidate_openalex_id": "https://openalex.org/W1964028587",
+        "pilot_label": "2",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2764035156",
+        "candidate_openalex_id": "https://openalex.org/W2895591481",
+        "pilot_label": "1",
+        "round2_label": "2"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "candidate_openalex_id": "https://openalex.org/W1631356911",
+        "pilot_label": "0",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "candidate_openalex_id": "https://openalex.org/W2989761958",
+        "pilot_label": "0",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "candidate_openalex_id": "https://openalex.org/W4320854479",
+        "pilot_label": "0",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W3206040918",
+        "candidate_openalex_id": "https://openalex.org/W2372149058",
+        "pilot_label": "0",
+        "round2_label": "1"
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W3206040918",
+        "candidate_openalex_id": "https://openalex.org/W4212962264",
+        "pilot_label": "1",
+        "round2_label": "2"
+      }
+    ],
+    "less_shortcut_shaped_than_pilot": true,
+    "indirect_lineage_still_absent": true,
+    "combined_v2_created": false,
+    "combined_v2_feasible_without_new_cross_round_reconciliation": false,
+    "combined_v2_blocker": "16 overlapping pilot-vs-round2 pairs carry different final labels; the current workflow has no policy artifact to reconcile cross-round disagreements automatically.",
+    "safest_next_step_for_combined_v2": "Export a cross-round adjudication template for the overlapping pilot-vs-round2 disagreement set, resolve those pairs explicitly, then materialize a combined dataset from pilot source annotations, the round-2 materialization inputs, and that cross-round adjudication file."
+  },
+  "recommendation": {
+    "choice": "benchmark expansion round 3 still recommended first",
+    "rationale": "Round 2 is worth freezing now, but it still has no indirect_lineage coverage and it cannot be safely unioned with the existing pilot benchmark without a separate cross-round adjudication pass over overlapping pairs whose final labels changed."
+  }
+}

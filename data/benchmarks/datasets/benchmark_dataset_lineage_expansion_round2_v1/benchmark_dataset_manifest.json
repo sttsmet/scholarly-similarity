@@ -1,0 +1,61 @@
+{
+  "adjudicated_conflict_count": 6,
+  "adjudication_complete": true,
+  "agreement_summary": {
+    "agreement_rate": 0.833333,
+    "disagreement_pair_count": 6,
+    "exact_match_pair_count": 30,
+    "metric_name": "raw_pair_agreement",
+    "overlap_pair_count": 36
+  },
+  "annotation_schema_version": "benchmark_annotation_rows.v1",
+  "annotator_count": 3,
+  "annotator_ids": [
+    "adjudicator",
+    "annotator_a",
+    "annotator_b"
+  ],
+  "aspect_scope": "lineage",
+  "benchmark_dataset_dir": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1",
+  "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round2_v1",
+  "benchmark_dataset_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/benchmark_dataset_manifest.json",
+  "benchmark_labels_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/benchmark_labels.csv",
+  "benchmark_labels_row_count": 60,
+  "benchmark_maturity_tier": "pilot",
+  "benchmark_preset_id": "benchmark_preset_independent_lineage_expansion_round2_v1",
+  "benchmark_preset_path": "/home/stts/projects/scholarly-similarity/configs/presets/benchmarks/benchmark_preset_independent_lineage_expansion_round2_v1.json",
+  "benchmark_schema_version": "benchmark_labels.v1",
+  "conflict_pair_count": 6,
+  "created_at": "2026-04-10T11:47:15.370134+00:00",
+  "label_distribution": {
+    "0": 22,
+    "1": 24,
+    "2": 14
+  },
+  "labels_sha256": "f0bb5ee296a56f7c2819003ba8034294a9c807af593fde57decf213f04cc3822",
+  "multi_annotated_pair_count": 36,
+  "overlap_pair_count": 36,
+  "per_seed_counts": {
+    "https://openalex.org/W1971384536": 5,
+    "https://openalex.org/W1971487905": 6,
+    "https://openalex.org/W2047498859": 6,
+    "https://openalex.org/W2764035156": 4,
+    "https://openalex.org/W2941673255": 8,
+    "https://openalex.org/W3206040918": 5,
+    "https://openalex.org/W4289253527": 16,
+    "https://openalex.org/W4323075702": 4,
+    "https://openalex.org/W4407956601": 6
+  },
+  "promotion_ineligibility_reasons": [
+    "At least 10 labeled seeds are required for promotion-ready maturity.",
+    "At least 150 labeled pairs are required for promotion-ready maturity."
+  ],
+  "promotion_ready": false,
+  "seed_count": 9,
+  "source_annotation_files": [
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/source_annotations/conflict_adjudication_template.csv",
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/source_annotations/annotator_a.completed_revA_20260410.corrected.materialize.csv",
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/source_annotations/annotator_b.completed_revB_20260410.corrected.materialize.csv"
+  ],
+  "source_annotation_row_count": 102
+}

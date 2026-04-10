@@ -1,0 +1,7 @@
+{
+  "benchmark_preset_id": "benchmark_preset_quantum_characterization_v2_boundary",
+  "seeds_csv": "data/benchmarks/seeds_quantum_characterization_v2_boundary.csv",
+  "created_at": "2026-04-03T09:00:00Z",
+  "description": "Quantum characterization boundary benchmark v2 with harder cross-lineage state, process, and detector tomography seeds",
+  "tags": ["quantum_characterization", "tomography", "boundary"]
+}

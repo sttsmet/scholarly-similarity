@@ -1,0 +1,87 @@
+packet_type: seed_selection_review_packet
+schema_version: 1
+packet_id: seed_packet_001
+created_at: "2026-04-05T12:00:00Z"
+
+source:
+  source_system: neo4j_openalex_local
+  source_snapshot_id: openalex_snapshot_001
+  candidate_pool_id: seed_pool_001
+
+selection_policy:
+  final_target_total: 12
+  min_total: 9
+  max_total: 15
+  allow_only_candidate_ids: true
+  allow_freeform_doi_additions: false
+
+tag_targets:
+  - tag: state_tomography
+    min: 3
+    max: 4
+  - tag: process_tomography
+    min: 3
+    max: 4
+  - tag: detector_tomography
+    min: 3
+    max: 4
+
+role_targets:
+  anchor_min: 3
+  boundary_min: 4
+  sentinel_min: 2
+
+hard_rules:
+  exclude_types: [review, editorial, erratum, paratext]
+  require_openalex_resolved: true
+  reject_duplicate_cluster_overflow: true
+
+candidates:
+  - candidate_id: C0001
+    doi: "10.1103/PhysRevLett.78.390"
+    title: "Complete characterization of a quantum process"
+    proposed_tag: process_tomography
+    secondary_tag_hints: [self_consistent_tomography]
+    year: 1997
+    type: article
+    openalex_resolved: true
+    citation_count: 2100
+    referenced_works_count: 35
+    graph_boundary_score: 0.81
+    graph_centrality_score: 0.92
+    duplicate_cluster_id: D012
+
+  - candidate_id: C0002
+    doi: "10.1038/nphys1133"
+    title: "Tomography of quantum detectors"
+    proposed_tag: detector_tomography
+    secondary_tag_hints: [process_tomography]
+    year: 2008
+    type: article
+    openalex_resolved: true
+    citation_count: 650
+    referenced_works_count: 41
+    graph_boundary_score: 0.88
+    graph_centrality_score: 0.63
+    duplicate_cluster_id: D087
+
+  - candidate_id: C0003
+    doi: "10.1103/PhysRevA.93.012109"
+    title: "Quantum state tomography with noninstantaneous measurements"
+    proposed_tag: state_tomography
+    secondary_tag_hints: [self_consistent_tomography]
+    year: 2016
+    type: article
+    openalex_resolved: true
+    citation_count: 74
+    referenced_works_count: 28
+    graph_boundary_score: 0.76
+    graph_centrality_score: 0.49
+    duplicate_cluster_id: D104
+
+instructions:
+  reviewer_goal: >
+    Select the final benchmark seeds for the next cycle.
+    You may only reference candidate_id values listed in this packet.
+    Do not invent new DOIs.
+    If the pool is insufficient, return status=needs_expansion.

@@ -1,0 +1,322 @@
+{
+  "batch_id": "annotation_batch_lineage_expansion_round2_20260409",
+  "batch_dir": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round2_20260409",
+  "generated_at": "2026-04-09T18:04:12.211756+00:00",
+  "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round2_v1",
+  "source_pool_audit": {
+    "exportable_run_dir_count": 10,
+    "exportable_unique_seed_count": 9,
+    "source_run_ids": [
+      "doi_10_1038_ncomms1147__refs_10__related_10__hardneg_10",
+      "doi_10_1038_nphys1133__refs_10__related_20__hardneg_20",
+      "doi_10_1038_nphys1170__refs_10__related_10",
+      "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10",
+      "doi_10_1038_s41534_023_00688_7__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physreva_100_052315__refs_10__related_10__hardneg_10",
+      "doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physrevresearch_7_013208__refs_10__related_10__hardneg_10",
+      "doi_10_1103_prxquantum_3_030318__refs_10__related_10__hardneg_10",
+      "doi_10_1126_science_1162086__refs_10__related_20__hardneg_20"
+    ],
+    "source_availability_global": {
+      "strong_lineage": 82,
+      "ambiguous_middle": 83,
+      "hard_negative_or_distractor": 26,
+      "provenance_weak": 8
+    },
+    "source_availability_by_seed": {
+      "https://openalex.org/W1971384536": {
+        "seed_openalex_id": "https://openalex.org/W1971384536",
+        "seed_title": "Efficient quantum state tomography",
+        "query_doi": "10.1038/ncomms1147",
+        "source_run_ids": [
+          "doi_10_1038_ncomms1147__refs_10__related_10__hardneg_10"
+        ],
+        "strata_available": {
+          "strong_lineage": 12,
+          "ambiguous_middle": 7
+        }
+      },
+      "https://openalex.org/W2047498859": {
+        "seed_openalex_id": "https://openalex.org/W2047498859",
+        "seed_title": "Tomography of quantum detectors",
+        "query_doi": "10.1038/nphys1133",
+        "source_run_ids": [
+          "doi_10_1038_nphys1133__refs_10__related_20__hardneg_20"
+        ],
+        "strata_available": {
+          "strong_lineage": 10,
+          "hard_negative_or_distractor": 1,
+          "ambiguous_middle": 9
+        }
+      },
+      "https://openalex.org/W4289253527": {
+        "seed_openalex_id": "https://openalex.org/W4289253527",
+        "seed_title": "Measured measurement",
+        "query_doi": "10.1038/nphys1170",
+        "source_run_ids": [
+          "doi_10_1038_nphys1170__refs_10__related_10",
+          "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10"
+        ],
+        "strata_available": {
+          "ambiguous_middle": 10,
+          "provenance_weak": 8,
+          "hard_negative_or_distractor": 10
+        }
+      },
+      "https://openalex.org/W4323075702": {
+        "seed_openalex_id": "https://openalex.org/W4323075702",
+        "seed_title": "Parallel tomography of quantum non-demolition measurements in multi-qubit devices",
+        "query_doi": "10.1038/s41534-023-00688-7",
+        "source_run_ids": [
+          "doi_10_1038_s41534_023_00688_7__refs_10__related_20__hardneg_20"
+        ],
+        "strata_available": {
+          "strong_lineage": 10,
+          "ambiguous_middle": 10
+        }
+      },
+      "https://openalex.org/W2941673255": {
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "seed_title": "Detector tomography on IBM quantum computers and mitigation of an imperfect measurement",
+        "query_doi": "10.1103/physreva.100.052315",
+        "source_run_ids": [
+          "doi_10_1103_physreva_100_052315__refs_10__related_10__hardneg_10"
+        ],
+        "strata_available": {
+          "strong_lineage": 10,
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 7
+        }
+      },
+      "https://openalex.org/W2764035156": {
+        "seed_openalex_id": "https://openalex.org/W2764035156",
+        "seed_title": "Measurement of qubits",
+        "query_doi": "10.1103/physreva.64.052312",
+        "source_run_ids": [
+          "doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20"
+        ],
+        "strata_available": {
+          "strong_lineage": 11,
+          "ambiguous_middle": 7
+        }
+      },
+      "https://openalex.org/W4407956601": {
+        "seed_openalex_id": "https://openalex.org/W4407956601",
+        "seed_title": "Boosting projective methods for quantum process and detector tomography",
+        "query_doi": "10.1103/physrevresearch.7.013208",
+        "source_run_ids": [
+          "doi_10_1103_physrevresearch_7_013208__refs_10__related_10__hardneg_10"
+        ],
+        "strata_available": {
+          "strong_lineage": 10,
+          "hard_negative_or_distractor": 3,
+          "ambiguous_middle": 10
+        }
+      },
+      "https://openalex.org/W3206040918": {
+        "seed_openalex_id": "https://openalex.org/W3206040918",
+        "seed_title": "Characterizing Quantum Instruments: From Nondemolition Measurements to Quantum Error Correction",
+        "query_doi": "10.1103/prxquantum.3.030318",
+        "source_run_ids": [
+          "doi_10_1103_prxquantum_3_030318__refs_10__related_10__hardneg_10"
+        ],
+        "strata_available": {
+          "strong_lineage": 9,
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 2
+        }
+      },
+      "https://openalex.org/W1971487905": {
+        "seed_openalex_id": "https://openalex.org/W1971487905",
+        "seed_title": "Complete Characterization of Quantum-Optical Processes",
+        "query_doi": "10.1126/science.1162086",
+        "source_run_ids": [
+          "doi_10_1126_science_1162086__refs_10__related_20__hardneg_20"
+        ],
+        "strata_available": {
+          "strong_lineage": 10,
+          "ambiguous_middle": 10,
+          "hard_negative_or_distractor": 3
+        }
+      }
+    },
+    "source_limitations": [
+      "No currently exportable top-level run supplies indirect_lineage; realized count must remain 0 unless new source pools are built.",
+      "All provenance_weak supply comes from one seed (https://openalex.org/W4289253527) with only 8 unique available pairs.",
+      "Hard-negative supply is finite (26 unique pairs total) and concentrated in a small subset of seeds.",
+      "Additional experiment namespaces exist under runs/, but the current stratified exporter only consumes top-level rank-ready run directories with both seed_record.json and scored_candidates.jsonl."
+    ]
+  },
+  "batch_design": {
+    "annotator_ids": [
+      "annotator_a",
+      "annotator_b"
+    ],
+    "target_pair_count": 60,
+    "exported_pair_count": 60,
+    "planned_overlap_ratio": 0.6,
+    "overlap_pair_count": 36,
+    "per_seed_quota": 8,
+    "per_seed_quota_overrides": {
+      "https://openalex.org/W4289253527": 16
+    },
+    "requested_per_stratum_quotas": {
+      "strong_lineage": 10,
+      "indirect_lineage": 8,
+      "ambiguous_middle": 18,
+      "provenance_weak": 8,
+      "hard_negative_or_distractor": 20
+    },
+    "realized_strata_counts": {
+      "ambiguous_middle": 18,
+      "hard_negative_or_distractor": 20,
+      "indirect_lineage": 0,
+      "provenance_weak": 8,
+      "strong_lineage": 14
+    },
+    "quota_policy_note": "Requested reserve buckets for indirect_lineage, provenance_weak, and hard_negative_or_distractor first; unmet indirect demand was explicitly allowed to shortfall and the remaining capacity backfilled into strong_lineage / ambiguous_middle under the existing exporter."
+  },
+  "campaign_audit": {
+    "selected_seeds": [
+      {
+        "seed_openalex_id": "https://openalex.org/W1971384536",
+        "seed_title": "Efficient quantum state tomography",
+        "query_doi": "10.1038/ncomms1147",
+        "source_run_ids": [
+          "doi_10_1038_ncomms1147__refs_10__related_10__hardneg_10"
+        ],
+        "exported_pair_count": 5
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2047498859",
+        "seed_title": "Tomography of quantum detectors",
+        "query_doi": "10.1038/nphys1133",
+        "source_run_ids": [
+          "doi_10_1038_nphys1133__refs_10__related_20__hardneg_20"
+        ],
+        "exported_pair_count": 6
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W4289253527",
+        "seed_title": "Measured measurement",
+        "query_doi": "10.1038/nphys1170",
+        "source_run_ids": [
+          "doi_10_1038_nphys1170__refs_10__related_10",
+          "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10"
+        ],
+        "exported_pair_count": 16
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W4323075702",
+        "seed_title": "Parallel tomography of quantum non-demolition measurements in multi-qubit devices",
+        "query_doi": "10.1038/s41534-023-00688-7",
+        "source_run_ids": [
+          "doi_10_1038_s41534_023_00688_7__refs_10__related_20__hardneg_20"
+        ],
+        "exported_pair_count": 4
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "seed_title": "Detector tomography on IBM quantum computers and mitigation of an imperfect measurement",
+        "query_doi": "10.1103/physreva.100.052315",
+        "source_run_ids": [
+          "doi_10_1103_physreva_100_052315__refs_10__related_10__hardneg_10"
+        ],
+        "exported_pair_count": 8
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2764035156",
+        "seed_title": "Measurement of qubits",
+        "query_doi": "10.1103/physreva.64.052312",
+        "source_run_ids": [
+          "doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20"
+        ],
+        "exported_pair_count": 4
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W4407956601",
+        "seed_title": "Boosting projective methods for quantum process and detector tomography",
+        "query_doi": "10.1103/physrevresearch.7.013208",
+        "source_run_ids": [
+          "doi_10_1103_physrevresearch_7_013208__refs_10__related_10__hardneg_10"
+        ],
+        "exported_pair_count": 6
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W3206040918",
+        "seed_title": "Characterizing Quantum Instruments: From Nondemolition Measurements to Quantum Error Correction",
+        "query_doi": "10.1103/prxquantum.3.030318",
+        "source_run_ids": [
+          "doi_10_1103_prxquantum_3_030318__refs_10__related_10__hardneg_10"
+        ],
+        "exported_pair_count": 5
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W1971487905",
+        "seed_title": "Complete Characterization of Quantum-Optical Processes",
+        "query_doi": "10.1126/science.1162086",
+        "source_run_ids": [
+          "doi_10_1126_science_1162086__refs_10__related_20__hardneg_20"
+        ],
+        "exported_pair_count": 6
+      }
+    ],
+    "source_runs": [
+      "doi_10_1038_ncomms1147__refs_10__related_10__hardneg_10",
+      "doi_10_1038_nphys1133__refs_10__related_20__hardneg_20",
+      "doi_10_1038_nphys1170__refs_10__related_10",
+      "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10",
+      "doi_10_1038_s41534_023_00688_7__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physreva_100_052315__refs_10__related_10__hardneg_10",
+      "doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20",
+      "doi_10_1103_physrevresearch_7_013208__refs_10__related_10__hardneg_10",
+      "doi_10_1103_prxquantum_3_030318__refs_10__related_10__hardneg_10",
+      "doi_10_1126_science_1162086__refs_10__related_20__hardneg_20"
+    ],
+    "exported_unique_pair_count": 60,
+    "per_seed_counts": {
+      "https://openalex.org/W1971384536": 5,
+      "https://openalex.org/W1971487905": 6,
+      "https://openalex.org/W2047498859": 6,
+      "https://openalex.org/W2764035156": 4,
+      "https://openalex.org/W2941673255": 8,
+      "https://openalex.org/W3206040918": 5,
+      "https://openalex.org/W4289253527": 16,
+      "https://openalex.org/W4323075702": 4,
+      "https://openalex.org/W4407956601": 6
+    },
+    "stratum_counts": {
+      "ambiguous_middle": 18,
+      "hard_negative_or_distractor": 20,
+      "indirect_lineage": 0,
+      "provenance_weak": 8,
+      "strong_lineage": 14
+    },
+    "overlap_count": 36,
+    "planned_overlap_ratio": 0.6,
+    "realized_overlap_ratio": 0.6,
+    "annotator_row_counts": {
+      "annotator_a": 48,
+      "annotator_b": 48
+    },
+    "shortfall_warnings": [
+      "indirect_lineage: realized 0 below requested quota 8"
+    ],
+    "materially_less_shortcut_shaped_than_pilot_round_1": true
+  },
+  "qa_checks": {
+    "pair_assignment_count_matches_manifest": true,
+    "annotator_csv_counts_match_assignment_plan": true,
+    "duplicate_rows_within_annotator_csvs": {
+      "annotator_a": 0,
+      "annotator_b": 0
+    },
+    "annotator_csvs_are_blinded": true
+  },
+  "recommendation": {
+    "proceed_to_human_annotation": true,
+    "rationale": "Yes. The batch hits 60 unique pairs across 9 seeds, fully realizes provenance_weak and hard_negative_or_distractor pressure, and is materially less shortcut-shaped than pilot round 1. The only structural gap is indirect_lineage, which the current source pool cannot provide.",
+    "round_3_improvement_note": "Before a round-3 expansion batch, build at least one new top-level source run that actually surfaces seed_related items in the top-5 so indirect_lineage becomes exportable instead of structurally absent."
+  }
+}

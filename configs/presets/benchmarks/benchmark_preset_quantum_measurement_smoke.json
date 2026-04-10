@@ -1,0 +1,7 @@
+{
+  "benchmark_preset_id": "benchmark_preset_quantum_measurement_smoke",
+  "created_at": "2026-04-02T14:33:21Z",
+  "seeds_csv": "data/benchmarks/seeds_quantum_measurement_smoke.csv",
+  "description": null,
+  "tags": []
+}

@@ -1,0 +1,136 @@
+"$schema": "https://json-schema.org/draft/2020-12/schema"
+title: seed_selection_verifier_reply_v1
+type: object
+additionalProperties: false
+required:
+  - reply_type
+  - schema_version
+  - packet_id
+  - reviewer_id
+  - completed_at
+  - status
+  - selected_seeds
+  - rejected_candidates
+  - expansion_requests
+  - summary
+properties:
+  reply_type:
+    const: seed_selection_verifier_reply
+  schema_version:
+    const: 1
+  packet_id:
+    type: string
+    pattern: "^seed_packet_[A-Za-z0-9._-]+$"
+  reviewer_id:
+    type: string
+    minLength: 1
+  completed_at:
+    type: string
+    format: date-time
+  status:
+    enum:
+      - ready_for_cycle
+      - needs_expansion
+      - reject_packet
+  selected_seeds:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - candidate_id
+        - final_tag
+        - final_role
+        - confidence
+        - reason_codes
+      properties:
+        candidate_id:
+          type: string
+          pattern: "^C[0-9]{4,}$"
+        final_tag:
+          $ref: "#/$defs/tag_name"
+        final_role:
+          $ref: "#/$defs/role_name"
+        confidence:
+          type: number
+          minimum: 0
+          maximum: 1
+        reason_codes:
+          type: array
+          minItems: 1
+          items:
+            type: string
+            pattern: "^[a-z0-9_]+$"
+  rejected_candidates:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - candidate_id
+        - confidence
+        - reason_codes
+      properties:
+        candidate_id:
+          type: string
+          pattern: "^C[0-9]{4,}$"
+        confidence:
+          type: number
+          minimum: 0
+          maximum: 1
+        reason_codes:
+          type: array
+          minItems: 1
+          items:
+            type: string
+            pattern: "^[a-z0-9_]+$"
+  expansion_requests:
+    type: array
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - tag
+        - needed_count
+        - desired_roles
+        - reason
+      properties:
+        tag:
+          $ref: "#/$defs/tag_name"
+        needed_count:
+          type: integer
+          minimum: 1
+        desired_roles:
+          type: array
+          minItems: 1
+          items:
+            $ref: "#/$defs/role_name"
+        reason:
+          type: string
+          minLength: 1
+  summary:
+    type: object
+    additionalProperties: false
+    required:
+      - accepted_count
+      - rejected_count
+      - notes
+    properties:
+      accepted_count:
+        type: integer
+        minimum: 0
+      rejected_count:
+        type: integer
+        minimum: 0
+      notes:
+        type: string
+        minLength: 1
+"$defs":
+  tag_name:
+    type: string
+    pattern: "^[a-z0-9_]+$"
+  role_name:
+    enum:
+      - anchor
+      - boundary
+      - sentinel

@@ -1,0 +1,7 @@
+{
+  "benchmark_preset_id": "benchmark_preset_quantum_characterization_v3_selfconsistent",
+  "seeds_csv": "data/benchmarks/seeds_quantum_characterization_v3_selfconsistent.csv",
+  "created_at": "2026-04-03T11:10:00Z",
+  "description": "Quantum characterization benchmark v3 with state, process, detector, and self-consistent tomography lineages",
+  "tags": ["quantum_characterization", "tomography", "self_consistent", "crosslineage"]
+}

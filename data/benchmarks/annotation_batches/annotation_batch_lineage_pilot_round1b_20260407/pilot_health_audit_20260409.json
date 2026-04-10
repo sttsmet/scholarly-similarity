@@ -1,0 +1,234 @@
+{
+  "audit_id": "pilot_health_audit_20260409",
+  "generated_at": "2026-04-09T00:00:00+03:00",
+  "annotation_batch_id": "annotation_batch_lineage_pilot_round1b_20260407",
+  "status": "blocked_pending_adjudication",
+  "source_annotation_files": [
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_pilot_round1b_20260407/annotator_a.completed_revB_20260409.csv",
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_pilot_round1b_20260407/annotator_b.completed_revA_20260409.csv"
+  ],
+  "intended_seed_csv_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/seeds_independent_lineage_pilot_v1.csv",
+  "intended_benchmark_dataset_id": "benchmark_dataset_lineage_pilot_v1",
+  "intended_benchmark_preset_id": "benchmark_preset_independent_lineage_pilot_v1",
+  "validation_summary": {
+    "schema_valid": true,
+    "duplicate_row_detected": false,
+    "missing_required_fields_detected": false,
+    "annotator_identity_consistent": true,
+    "file_summaries": [
+      {
+        "path": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_pilot_round1b_20260407/annotator_a.completed_revB_20260409.csv",
+        "schema_valid": true,
+        "required_columns_present": true,
+        "duplicate_row_detected": false,
+        "missing_required_fields_detected": false,
+        "loaded_row_count": 60,
+        "reviewed_row_count": 60,
+        "annotator_ids_in_file": [
+          "annotator_a"
+        ],
+        "annotator_identity_consistent": true,
+        "fieldnames": [
+          "seed_openalex_id",
+          "seed_title",
+          "candidate_openalex_id",
+          "title",
+          "publication_year",
+          "label",
+          "label_confidence",
+          "aspect",
+          "annotator_id",
+          "notes",
+          "adjudicated_label",
+          "adjudication_notes"
+        ]
+      },
+      {
+        "path": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_pilot_round1b_20260407/annotator_b.completed_revA_20260409.csv",
+        "schema_valid": true,
+        "required_columns_present": true,
+        "duplicate_row_detected": false,
+        "missing_required_fields_detected": false,
+        "loaded_row_count": 59,
+        "reviewed_row_count": 59,
+        "annotator_ids_in_file": [
+          "annotator_b"
+        ],
+        "annotator_identity_consistent": true,
+        "fieldnames": [
+          "seed_openalex_id",
+          "seed_title",
+          "candidate_openalex_id",
+          "title",
+          "publication_year",
+          "label",
+          "label_confidence",
+          "aspect",
+          "annotator_id",
+          "notes",
+          "adjudicated_label",
+          "adjudication_notes"
+        ]
+      }
+    ],
+    "validation_failures": []
+  },
+  "coverage_summary": {
+    "source_annotation_row_count": 119,
+    "unique_pair_count": 70,
+    "final_labeled_pair_count_if_adjudicated": 70,
+    "seed_count": 7,
+    "per_seed_counts": {
+      "https://openalex.org/W1971384536": 8,
+      "https://openalex.org/W1971487905": 11,
+      "https://openalex.org/W2047498859": 9,
+      "https://openalex.org/W2764035156": 9,
+      "https://openalex.org/W2941673255": 12,
+      "https://openalex.org/W3206040918": 10,
+      "https://openalex.org/W4407956601": 11
+    },
+    "single_annotated_pair_count": 21,
+    "multi_annotated_pair_count": 49,
+    "overlap_pair_count": 49
+  },
+  "agreement_summary": {
+    "metric_name": "raw_pair_agreement",
+    "overlap_pair_count": 49,
+    "exact_match_pair_count": 46,
+    "disagreement_pair_count": 3,
+    "agreement_rate": 0.938776
+  },
+  "conflict_summary": {
+    "conflict_pair_count": 3,
+    "adjudicated_conflict_count": 0,
+    "adjudication_complete": false,
+    "conflicts": [
+      {
+        "seed_openalex_id": "https://openalex.org/W1971487905",
+        "candidate_openalex_id": "https://openalex.org/W2084259546",
+        "annotator_ids": [
+          "annotator_a",
+          "annotator_b"
+        ],
+        "raw_labels": [
+          0,
+          1
+        ]
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W2941673255",
+        "candidate_openalex_id": "https://openalex.org/W1631356911",
+        "annotator_ids": [
+          "annotator_a",
+          "annotator_b"
+        ],
+        "raw_labels": [
+          0,
+          1
+        ]
+      },
+      {
+        "seed_openalex_id": "https://openalex.org/W3206040918",
+        "candidate_openalex_id": "https://openalex.org/W4212962264",
+        "annotator_ids": [
+          "annotator_a",
+          "annotator_b"
+        ],
+        "raw_labels": [
+          1,
+          2
+        ]
+      }
+    ],
+    "adjudication_template_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_lineage_pilot_round1b_20260409/conflict_adjudication_template.csv",
+    "adjudication_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_lineage_pilot_round1b_20260409/conflict_adjudication_manifest.json"
+  },
+  "label_distribution": {
+    "status": "pending_adjudication",
+    "fixed_non_conflict_distribution": {
+      "0": 36,
+      "1": 21,
+      "2": 10
+    },
+    "possible_final_distributions": [
+      {
+        "0": 38,
+        "1": 22,
+        "2": 10
+      },
+      {
+        "0": 38,
+        "1": 21,
+        "2": 11
+      },
+      {
+        "0": 37,
+        "1": 23,
+        "2": 10
+      },
+      {
+        "0": 37,
+        "1": 22,
+        "2": 11
+      },
+      {
+        "0": 37,
+        "1": 23,
+        "2": 10
+      },
+      {
+        "0": 37,
+        "1": 22,
+        "2": 11
+      },
+      {
+        "0": 36,
+        "1": 24,
+        "2": 10
+      },
+      {
+        "0": 36,
+        "1": 23,
+        "2": 11
+      }
+    ],
+    "possible_final_label_bounds": {
+      "0": {
+        "min": 36,
+        "max": 38
+      },
+      "1": {
+        "min": 21,
+        "max": 24
+      },
+      "2": {
+        "min": 10,
+        "max": 11
+      }
+    }
+  },
+  "materialization": {
+    "blocked": true,
+    "blocker": "3 unresolved conflicting overlap pairs require adjudicated_label values before materialization.",
+    "frozen_labels_csv_path": null,
+    "benchmark_dataset_manifest_path": null,
+    "benchmark_preset_path": null
+  },
+  "maturity_assessment": {
+    "current_benchmark_maturity_tier": null,
+    "current_promotion_ready": false,
+    "current_reason": "Current policy requires all conflicts to be adjudicated before materialization and maturity assignment.",
+    "contingent_benchmark_maturity_tier_if_conflicts_are_adjudicated": "pilot",
+    "contingent_promotion_ready_if_conflicts_are_adjudicated": false,
+    "contingent_promotion_ineligibility_reasons": [
+      "At least 10 labeled seeds are required for promotion-ready maturity.",
+      "At least 150 labeled pairs are required for promotion-ready maturity."
+    ],
+    "strong_enough_for_next_constrained_theory_revision_round_if_adjudicated": true
+  },
+  "recommendation": {
+    "next_action": "run_a_new_constrained_theory_round_now",
+    "justification": "After the 3 exported conflicts are adjudicated, the dataset will freeze at 70 labeled pairs across 7 seeds with 0.938776 raw agreement, which is sufficient for pilot-tier evidence but not promotion-ready evidence.",
+    "prerequisite": "Complete adjudication and rerun materialization first."
+  }
+}

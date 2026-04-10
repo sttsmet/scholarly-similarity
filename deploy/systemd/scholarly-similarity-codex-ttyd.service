@@ -1,0 +1,20 @@
+[Unit]
+Description=Scholarly Similarity Codex CLI via ttyd
+After=network.target
+
+[Service]
+Type=simple
+User=stts
+WorkingDirectory=/home/stts/projects/scholarly-similarity
+EnvironmentFile=-/etc/default/scholarly-similarity-codex-ttyd
+Environment=PYTHONUNBUFFERED=1
+Environment=WORKSPACE_ROOT=/home/stts/projects/scholarly-similarity
+Environment=TTYD_HOST=127.0.0.1
+Environment=TTYD_PORT=7681
+Environment=CODEX_HOME=/home/stts/.codex
+ExecStart=/home/stts/projects/scholarly-similarity/scripts/run_codex_ttyd.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

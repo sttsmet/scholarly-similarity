@@ -1,0 +1,60 @@
+{
+  "theory_round_preset_id": "theory_round_lineage_graph_path_a1",
+  "created_at": "2026-04-10T00:00:00Z",
+  "description": "supportive-only graph_path A1 theory round against the standalone lineage round-3 benchmark",
+  "baseline_theory_snapshot": "runs/accepted_baselines/baseline_001/accepted_theory_snapshot.yaml",
+  "benchmark_preset_id": "benchmark_preset_independent_lineage_expansion_round3_v1",
+  "benchmark_preset_path": "configs/presets/benchmarks/benchmark_preset_independent_lineage_expansion_round3_v1.json",
+  "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round3_v1",
+  "benchmark_dataset_manifest_path": "data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round3_v1/benchmark_dataset_manifest.json",
+  "evaluation_mode": "independent_benchmark",
+  "metric_scope": "local_corpus_ranking",
+  "evidence_tier": "supportive_only",
+  "benchmark_maturity_tier": "pilot",
+  "promotion_ready": false,
+  "auto_promotion_allowed": false,
+  "constrained_mode": "constrained_lineage_graph_path_a1",
+  "allowed_paths": [
+    "sim_weights.bibliographic_coupling",
+    "sim_weights.direct_citation",
+    "sim_weights.topical",
+    "sim_weights.temporal",
+    "sim_weights.semantic",
+    "sim_weights.graph_path",
+    "sim_parameters.graph_path.related_edge_weight",
+    "sim_parameters.graph_path.path_length_decay",
+    "sim_parameters.graph_path.saturation_kappa",
+    "sim_parameters.graph_path.max_bridge_nodes"
+  ],
+  "closeout_states": [
+    "reject",
+    "park_as_neutral",
+    "shadow_accept",
+    "surface_exhausted"
+  ],
+  "graph_path_parameter_grid": {
+    "related_edge_weight": [
+      0.25,
+      0.5
+    ],
+    "path_length_decay": [
+      0.4,
+      0.6,
+      0.8
+    ],
+    "saturation_kappa": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "max_bridge_nodes": [
+      20,
+      40,
+      60
+    ],
+    "allowed_path_lengths_fixed": [
+      2,
+      3
+    ]
+  }
+}

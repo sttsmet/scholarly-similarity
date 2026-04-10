@@ -1,0 +1,4 @@
+seed_openalex_id,candidate_openalex_id,label,label_confidence,label_reason,notes
+https://openalex.org/WSEED,https://openalex.org/WCAND1,2,0.95,independent strong,fixture positive
+https://openalex.org/WSEED,https://openalex.org/WCAND2,1,0.70,independent moderate,fixture related
+https://openalex.org/WSEED,https://openalex.org/WCAND3,0,0.60,independent negative,fixture negative

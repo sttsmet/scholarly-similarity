@@ -1,0 +1,16 @@
+{
+  "adjudication_dir": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_batch_lineage_expansion_round3_20260410_current",
+  "adjudication_id": "adjudication_batch_lineage_expansion_round3_20260410_current",
+  "adjudication_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_batch_lineage_expansion_round3_20260410_current/conflict_adjudication_manifest.json",
+  "adjudication_schema_version": "benchmark_adjudication_rows.v1",
+  "annotation_schema_version": "benchmark_annotation_rows.v1",
+  "aspect_scope": "lineage",
+  "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round3_v1",
+  "conflict_pair_count": 0,
+  "created_at": "2026-04-10T13:27:39.084784+00:00",
+  "output_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_batch_lineage_expansion_round3_20260410_current/conflict_adjudication_template.csv",
+  "source_annotation_files": [
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_b.completed.round3_revA_20260410.csv",
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_b.completed.round3_revB_20260410.csv"
+  ]
+}

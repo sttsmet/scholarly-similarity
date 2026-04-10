@@ -1,0 +1,15 @@
+[Unit]
+Description=Scholarly Similarity Streamlit
+After=network.target
+
+[Service]
+Type=simple
+User=stts
+WorkingDirectory=/home/stts/projects/scholarly-similarity
+ExecStart=/home/stts/projects/scholarly-similarity/scripts/run_streamlit_server.sh
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

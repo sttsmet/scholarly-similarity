@@ -1,0 +1,18 @@
+{
+  "launch_profile_id": "launch_quantum_characterization_v2_boundary",
+  "created_at": "2026-04-03T09:00:00Z",
+  "accepted_baseline_id": "baseline_001",
+  "accepted_baseline_dir": "runs/accepted_baselines/baseline_001",
+  "accepted_theory_snapshot": "runs/accepted_baselines/baseline_001/accepted_theory_snapshot.yaml",
+  "benchmark_preset_id": "benchmark_preset_quantum_characterization_v2_boundary",
+  "seeds_csv": "data/benchmarks/seeds_quantum_characterization_v2_boundary.csv",
+  "eval_preset_id": "eval_preset_001",
+  "max_references": 10,
+  "max_related": 10,
+  "max_hard_negatives": 10,
+  "top_k": 10,
+  "label_source": "silver",
+  "refresh": false,
+  "description": "Quantum characterization boundary benchmark v2 with harder cross-lineage state, process, and detector tomography seeds",
+  "tags": ["quantum_characterization", "tomography", "boundary"]
+}

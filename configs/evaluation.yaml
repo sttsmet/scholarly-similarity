@@ -1,0 +1,10 @@
+benchmark_path: data/benchmarks/seeds.csv
+metrics:
+  - precision_at_5
+  - reciprocal_rank
+perturbation:
+  enabled: true
+  zero_weight_features:
+    - semantic
+generator_verifier:
+  packet_dir: runs

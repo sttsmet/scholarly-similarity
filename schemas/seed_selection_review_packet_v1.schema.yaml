@@ -1,0 +1,194 @@
+"$schema": "https://json-schema.org/draft/2020-12/schema"
+title: seed_selection_review_packet_v1
+type: object
+additionalProperties: false
+required:
+  - packet_type
+  - schema_version
+  - packet_id
+  - created_at
+  - source
+  - selection_policy
+  - tag_targets
+  - role_targets
+  - hard_rules
+  - candidates
+  - instructions
+properties:
+  packet_type:
+    const: seed_selection_review_packet
+  schema_version:
+    const: 1
+  packet_id:
+    type: string
+    pattern: "^seed_packet_[A-Za-z0-9._-]+$"
+  created_at:
+    type: string
+    format: date-time
+  source:
+    type: object
+    additionalProperties: false
+    required:
+      - source_system
+      - source_snapshot_id
+      - candidate_pool_id
+    properties:
+      source_system:
+        type: string
+        minLength: 1
+      source_snapshot_id:
+        type: string
+        minLength: 1
+      candidate_pool_id:
+        type: string
+        minLength: 1
+  selection_policy:
+    type: object
+    additionalProperties: false
+    required:
+      - final_target_total
+      - min_total
+      - max_total
+      - allow_only_candidate_ids
+      - allow_freeform_doi_additions
+    properties:
+      final_target_total:
+        type: integer
+        minimum: 1
+      min_total:
+        type: integer
+        minimum: 1
+      max_total:
+        type: integer
+        minimum: 1
+      allow_only_candidate_ids:
+        type: boolean
+      allow_freeform_doi_additions:
+        type: boolean
+  tag_targets:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - tag
+        - min
+        - max
+      properties:
+        tag:
+          $ref: "#/$defs/tag_name"
+        min:
+          type: integer
+          minimum: 0
+        max:
+          type: integer
+          minimum: 0
+  role_targets:
+    type: object
+    additionalProperties: false
+    required:
+      - anchor_min
+      - boundary_min
+      - sentinel_min
+    properties:
+      anchor_min:
+        type: integer
+        minimum: 0
+      boundary_min:
+        type: integer
+        minimum: 0
+      sentinel_min:
+        type: integer
+        minimum: 0
+  hard_rules:
+    type: object
+    additionalProperties: false
+    required:
+      - exclude_types
+      - require_openalex_resolved
+      - reject_duplicate_cluster_overflow
+    properties:
+      exclude_types:
+        type: array
+        items:
+          type: string
+      require_openalex_resolved:
+        type: boolean
+      reject_duplicate_cluster_overflow:
+        type: boolean
+  candidates:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required:
+        - candidate_id
+        - doi
+        - title
+        - proposed_tag
+        - secondary_tag_hints
+        - year
+        - type
+        - openalex_resolved
+        - citation_count
+        - referenced_works_count
+        - graph_boundary_score
+        - graph_centrality_score
+        - duplicate_cluster_id
+      properties:
+        candidate_id:
+          type: string
+          pattern: "^C[0-9]{4,}$"
+        doi:
+          type: string
+          pattern: "^10\\..+/.+$"
+        title:
+          type: string
+          minLength: 1
+        proposed_tag:
+          $ref: "#/$defs/tag_name"
+        secondary_tag_hints:
+          type: array
+          items:
+            $ref: "#/$defs/tag_name"
+        year:
+          type: integer
+          minimum: 1800
+          maximum: 2100
+        type:
+          type: string
+          minLength: 1
+        openalex_resolved:
+          type: boolean
+        citation_count:
+          type: integer
+          minimum: 0
+        referenced_works_count:
+          type: integer
+          minimum: 0
+        graph_boundary_score:
+          type: number
+          minimum: 0
+          maximum: 1
+        graph_centrality_score:
+          type: number
+          minimum: 0
+          maximum: 1
+        duplicate_cluster_id:
+          type: string
+          minLength: 1
+  instructions:
+    type: object
+    additionalProperties: false
+    required:
+      - reviewer_goal
+    properties:
+      reviewer_goal:
+        type: string
+        minLength: 1
+"$defs":
+  tag_name:
+    type: string
+    pattern: "^[a-z0-9_]+$"

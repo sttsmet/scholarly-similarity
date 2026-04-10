@@ -1,0 +1,25 @@
+{
+  "launch_profile_id": "launch_seed_quantum_v1_round1_rawfix_autorun_20260406",
+  "created_at": "2026-04-06T15:00:00Z",
+  "accepted_baseline_id": "baseline_001",
+  "accepted_baseline_dir": "runs/accepted_baselines/baseline_001",
+  "accepted_theory_snapshot": "runs/accepted_baselines/baseline_001/accepted_theory_snapshot.yaml",
+  "benchmark_preset_id": "benchmark_preset_seed_quantum_v1_round1_rawfix_autorun_20260406",
+  "seeds_csv": "data/benchmarks/seed_set_quantum_v1_round1_rawfix_autorun_20260406.csv",
+  "eval_preset_id": "eval_preset_002_boundary_harder",
+  "max_references": 10,
+  "max_related": 20,
+  "max_hard_negatives": 20,
+  "top_k": 10,
+  "label_source": "silver",
+  "refresh": false,
+  "description": "Quantum v1 round-1 raw-reply normalization test through inbox autorun",
+  "tags": [
+    "quantum_computing_architecture",
+    "quantum_information_cryptography",
+    "quantum_measurement_sensing",
+    "quantum_mechanics_applications",
+    "quantum_optics_atomic_interactions",
+    "seed_cycle_materialized"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "launch_profile_id": "launch_quantum_measurement_smoke",
+  "created_at": "2026-04-02T12:00:00Z",
+  "accepted_baseline_id": "baseline_001",
+  "accepted_baseline_dir": "runs/accepted_baselines/baseline_001",
+  "accepted_theory_snapshot": "runs/accepted_baselines/baseline_001/accepted_theory_snapshot.yaml",
+  "benchmark_preset_id": "benchmark_preset_quantum_measurement_smoke",
+  "seeds_csv": "data/benchmarks/seeds_quantum_measurement_smoke.csv",
+  "eval_preset_id": "eval_preset_001",
+  "max_references": 10,
+  "max_related": 10,
+  "max_hard_negatives": 10,
+  "top_k": 10,
+  "label_source": "silver",
+  "refresh": false,
+  "description": "First clean run with normalized quantum_measurement seeds",
+  "tags": ["smoke", "quantum_measurement"]
+}

@@ -1,0 +1,11 @@
+{
+  "eval_preset_id": "eval_preset_001",
+  "created_at": "2026-04-02T14:34:21Z",
+  "max_references": 10,
+  "max_related": 10,
+  "max_hard_negatives": 10,
+  "top_k": 10,
+  "label_source": "silver",
+  "refresh": false,
+  "description": null
+}

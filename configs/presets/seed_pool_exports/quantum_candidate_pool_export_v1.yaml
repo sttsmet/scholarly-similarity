@@ -1,0 +1,85 @@
+export_type: neo4j_candidate_pool_export
+schema_version: 1
+export_id: quantum_candidate_pool_export_v1
+source_snapshot_id: openalex_snapshot_cache_20260405_v1
+
+filters:
+  require_doi: true
+  min_publication_year: 1990
+  min_cited_by_count: 5
+  min_referenced_works_count: 10
+
+tag_rules:
+  - tag: quantum_information_cryptography
+    primary_topic_names:
+      - Quantum Information and Cryptography
+    primary_subfield_names: []
+    primary_field_names: []
+    primary_domain_names: []
+    topic_names:
+      - Quantum Information and Cryptography
+      - Coding theory and cryptography
+      - Cryptography and Data Security
+
+  - tag: quantum_computing_architecture
+    primary_topic_names:
+      - Quantum Computing Algorithms and Architecture
+    primary_subfield_names: []
+    primary_field_names: []
+    primary_domain_names: []
+    topic_names:
+      - Quantum Computing Algorithms and Architecture
+      - Quantum-Dot Cellular Automata
+      - Computability, Logic, AI Algorithms
+
+  - tag: quantum_optics_atomic_interactions
+    primary_topic_names:
+      - Quantum optics and atomic interactions
+      - Cold Atom Physics and Bose-Einstein Condensates
+    primary_subfield_names: []
+    primary_field_names: []
+    primary_domain_names: []
+    topic_names:
+      - Quantum optics and atomic interactions
+      - Cold Atom Physics and Bose-Einstein Condensates
+      - Orbital Angular Momentum in Optics
+      - Mechanical and Optical Resonators
+      - Strong Light-Matter Interactions
+
+  - tag: quantum_mechanics_applications
+    primary_topic_names:
+      - Quantum Mechanics and Applications
+      - Quantum many-body systems
+      - Quantum chaos and dynamical systems
+      - Quantum Mechanics and Non-Hermitian Physics
+      - Quantum Electrodynamics and Casimir Effect
+      - Quantum, superfluid, helium dynamics
+    primary_subfield_names: []
+    primary_field_names: []
+    primary_domain_names: []
+    topic_names:
+      - Quantum Mechanics and Applications
+      - Quantum many-body systems
+      - Quantum chaos and dynamical systems
+      - Quantum Mechanics and Non-Hermitian Physics
+      - Quantum Electrodynamics and Casimir Effect
+      - Quantum, superfluid, helium dynamics
+      - Theoretical and Computational Physics
+      - Experimental and Theoretical Physics Studies
+      - Statistical Mechanics and Entropy
+
+  - tag: quantum_measurement_sensing
+    primary_topic_names:
+      - Sparse and Compressive Sensing Techniques
+      - Advanced Optical Sensing Technologies
+      - Scientific Measurement and Uncertainty Evaluation
+    primary_subfield_names: []
+    primary_field_names: []
+    primary_domain_names: []
+    topic_names:
+      - Sparse and Compressive Sensing Techniques
+      - Advanced Optical Sensing Technologies
+      - Scientific Measurement and Uncertainty Evaluation
+      - Blind Source Separation Techniques
+      - Advanced Optical Imaging Technologies
+      - Advanced Fiber Optic Sensors

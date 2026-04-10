@@ -1,0 +1,14 @@
+{
+  "benchmark_preset_id": "benchmark_preset_seed_quantum_v1_round1_rawfix_20260406",
+  "seeds_csv": "data/benchmarks/seed_set_quantum_v1_round1_rawfix_20260406.csv",
+  "created_at": "2026-04-06T14:00:00Z",
+  "description": "Quantum v1 round-1 raw-reply normalization test through inbox processor",
+  "tags": [
+    "quantum_computing_architecture",
+    "quantum_information_cryptography",
+    "quantum_measurement_sensing",
+    "quantum_mechanics_applications",
+    "quantum_optics_atomic_interactions",
+    "seed_cycle_materialized"
+  ]
+}

@@ -1,0 +1,7 @@
+candidate_id,doi,title,proposed_tag,secondary_tag_hints,publication_year,type,openalex_resolved,citation_count,referenced_works_count,graph_boundary_score,graph_centrality_score,duplicate_cluster_id,source_snapshot_id
+C0001,10.1103/PhysRevLett.78.390,Complete characterization of a quantum process,process_tomography,self_consistent_tomography,1997,article,true,2100,35,0.81,0.92,D012,openalex_snapshot_001
+C0002,10.1038/nphys1133,Tomography of quantum detectors,detector_tomography,process_tomography,2008,article,true,650,41,0.88,0.63,D087,openalex_snapshot_001
+C0003,10.1103/PhysRevA.93.012109,Quantum state tomography with noninstantaneous measurements,state_tomography,self_consistent_tomography,2016,article,true,74,28,0.76,0.49,D104,openalex_snapshot_001
+C0004,10.1103/PhysRevA.87.030102,Quantum state tomography by continuous measurement and compressed sensing,state_tomography,self_consistent_tomography,2013,article,true,91,30,0.68,0.57,D105,openalex_snapshot_001
+C0005,10.1103/PhysRevResearch.7.013208,Process and detector tomography boundary case,detector_tomography,process_tomography|self_consistent_tomography,2025,article,true,18,42,0.94,0.51,D108,openalex_snapshot_001
+C0006,10.1103/PhysRevA.101.042332,Quantum process tomography with unknown input states,process_tomography,self_consistent_tomography,2020,article,true,24,39,0.83,0.54,D109,openalex_snapshot_001

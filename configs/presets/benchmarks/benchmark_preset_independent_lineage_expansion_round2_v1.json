@@ -1,0 +1,19 @@
+{
+  "benchmark_preset_id": "benchmark_preset_independent_lineage_expansion_round2_v1",
+  "created_at": "2026-04-10T11:47:15Z",
+  "seeds_csv": "data/benchmarks/seeds_independent_lineage_expansion_round2_v1.csv",
+  "benchmark_labels_path": "data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/benchmark_labels.csv",
+  "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round2_v1",
+  "benchmark_labels_sha256": "f0bb5ee296a56f7c2819003ba8034294a9c807af593fde57decf213f04cc3822",
+  "benchmark_dataset_manifest_path": "data/benchmarks/datasets/benchmark_dataset_lineage_expansion_round2_v1/benchmark_dataset_manifest.json",
+  "benchmark_schema_version": "benchmark_labels.v1",
+  "benchmark_labels_row_count": 60,
+  "aspect_scope": "lineage",
+  "description": "resolved lineage expansion round 2 benchmark materialized from returned human annotations",
+  "tags": [
+    "independent",
+    "lineage",
+    "human-labeled",
+    "round2"
+  ]
+}

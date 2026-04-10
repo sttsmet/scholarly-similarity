@@ -1,0 +1,55 @@
+reply_type: seed_selection_verifier_reply
+schema_version: 1
+packet_id: seed_packet_example
+reviewer_id: external_ai_verifier_001
+completed_at: "2026-04-05T12:30:00Z"
+
+status: ready_for_cycle
+
+selected_seeds:
+  - candidate_id: C0001
+    final_tag: process_tomography
+    final_role: sentinel
+    confidence: 0.95
+    reason_codes: [foundational, high_boundary_value, openalex_stable]
+
+  - candidate_id: C0002
+    final_tag: detector_tomography
+    final_role: boundary
+    confidence: 0.89
+    reason_codes: [cross_tag_useful, good_graph_neighborhood, openalex_stable]
+
+  - candidate_id: C0003
+    final_tag: state_tomography
+    final_role: boundary
+    confidence: 0.86
+    reason_codes: [high_boundary_value, good_graph_neighborhood, role_balance_needed]
+
+  - candidate_id: C0004
+    final_tag: state_tomography
+    final_role: anchor
+    confidence: 0.84
+    reason_codes: [foundational, openalex_stable, role_balance_needed]
+
+  - candidate_id: C0005
+    final_tag: detector_tomography
+    final_role: boundary
+    confidence: 0.88
+    reason_codes: [modern_case, cross_tag_useful, good_graph_neighborhood]
+
+  - candidate_id: C0006
+    final_tag: process_tomography
+    final_role: anchor
+    confidence: 0.85
+    reason_codes: [foundational, openalex_stable, role_balance_needed]
+
+rejected_candidates: []
+
+expansion_requests: []
+
+summary:
+  accepted_count: 6
+  rejected_count: 0
+  notes: >
+    Ready example reply that satisfies the current example packet totals,
+    per-tag quotas, and role minima.

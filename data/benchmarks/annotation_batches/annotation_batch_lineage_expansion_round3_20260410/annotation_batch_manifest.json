@@ -1,0 +1,107 @@
+{
+  "annotation_batch_schema_version": "benchmark_annotation_batch.v1",
+  "annotation_schema_version": "benchmark_annotation_rows.v1",
+  "annotator_ids": [
+    "annotator_a",
+    "annotator_b"
+  ],
+  "aspect_scope": "lineage",
+  "batch_dir": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410",
+  "batch_id": "annotation_batch_lineage_expansion_round3_20260410",
+  "batch_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotation_batch_manifest.json",
+  "benchmark_dataset_id": "benchmark_dataset_lineage_expansion_round3_v1",
+  "created_at": "2026-04-10T12:09:23.852709+00:00",
+  "exported_pair_count": 80,
+  "output_paths": {
+    "annotator_csv_paths": {
+      "annotator_a": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_a.csv",
+      "annotator_b": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_b.csv"
+    },
+    "batch_manifest_json": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotation_batch_manifest.json",
+    "pair_assignments_jsonl": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/pair_assignments.jsonl"
+  },
+  "overlap_pair_count": 40,
+  "overlap_ratio": 0.5,
+  "per_seed_quota": 8,
+  "per_seed_quota_overrides": {
+    "https://openalex.org/W4289253527": 10
+  },
+  "per_stratum_quotas": {
+    "ambiguous_middle": 28,
+    "hard_negative_or_distractor": 24,
+    "indirect_lineage": 8,
+    "provenance_weak": 8,
+    "strong_lineage": 12
+  },
+  "planned_overlap_ratio": 0.5,
+  "seed_ids": [
+    "https://openalex.org/W4407956601",
+    "https://openalex.org/W3206040918",
+    "https://openalex.org/W1971487905",
+    "https://openalex.org/W2941673255",
+    "https://openalex.org/W4289253527",
+    "https://openalex.org/W2764035156",
+    "https://openalex.org/W2027919910",
+    "https://openalex.org/W1988974364",
+    "https://openalex.org/W1974169933",
+    "https://openalex.org/W2047498859"
+  ],
+  "seed_pair_counts": {
+    "https://openalex.org/W1971487905": 8,
+    "https://openalex.org/W1974169933": 7,
+    "https://openalex.org/W1988974364": 8,
+    "https://openalex.org/W2027919910": 7,
+    "https://openalex.org/W2047498859": 8,
+    "https://openalex.org/W2764035156": 8,
+    "https://openalex.org/W2941673255": 8,
+    "https://openalex.org/W3206040918": 8,
+    "https://openalex.org/W4289253527": 10,
+    "https://openalex.org/W4407956601": 8
+  },
+  "source_benchmark_preset_id": null,
+  "source_benchmark_preset_path": null,
+  "source_run_dirs": [
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1103_physreva_77_032322__refs_0__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1103_physreva_77_032322__refs_10__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1126_science_1162086__refs_0__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1126_science_1162086__refs_10__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1038_nphys1133__refs_0__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1038_nphys1133__refs_10__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1103_physreva_64_052312__refs_0__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1038_nphys1170__refs_10__related_10",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1038_nphys1170__refs_10__related_10__hardneg_10",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1038_nphys1170__refs_0__related_10__hardneg_10",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1103_physreva_87_030102__refs_10__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1103_physreva_87_062119__refs_10__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1103_physreva_100_052315__refs_10__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1103_prxquantum_3_030318__refs_10__related_20__hardneg_20",
+    "/home/stts/projects/scholarly-similarity/runs/doi_10_1103_physrevresearch_7_013208__refs_10__related_20__hardneg_20"
+  ],
+  "source_run_ids": [
+    "doi_10_1103_physreva_77_032322__refs_0__related_20__hardneg_20",
+    "doi_10_1103_physreva_77_032322__refs_10__related_20__hardneg_20",
+    "doi_10_1126_science_1162086__refs_0__related_20__hardneg_20",
+    "doi_10_1126_science_1162086__refs_10__related_20__hardneg_20",
+    "doi_10_1038_nphys1133__refs_0__related_20__hardneg_20",
+    "doi_10_1038_nphys1133__refs_10__related_20__hardneg_20",
+    "doi_10_1103_physreva_64_052312__refs_0__related_20__hardneg_20",
+    "doi_10_1103_physreva_64_052312__refs_10__related_20__hardneg_20",
+    "doi_10_1038_nphys1170__refs_10__related_10",
+    "doi_10_1038_nphys1170__refs_10__related_10__hardneg_10",
+    "doi_10_1038_nphys1170__refs_0__related_10__hardneg_10",
+    "doi_10_1103_physreva_87_030102__refs_10__related_20__hardneg_20",
+    "doi_10_1103_physreva_87_062119__refs_10__related_20__hardneg_20",
+    "doi_10_1103_physreva_100_052315__refs_10__related_20__hardneg_20",
+    "doi_10_1103_prxquantum_3_030318__refs_10__related_20__hardneg_20",
+    "doi_10_1103_physrevresearch_7_013208__refs_10__related_20__hardneg_20"
+  ],
+  "strata_counts": {
+    "ambiguous_middle": 28,
+    "hard_negative_or_distractor": 24,
+    "indirect_lineage": 8,
+    "provenance_weak": 8,
+    "strong_lineage": 12
+  },
+  "target_pair_count": 80
+}

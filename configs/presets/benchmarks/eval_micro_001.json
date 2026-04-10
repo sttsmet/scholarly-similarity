@@ -1,0 +1,7 @@
+{
+  "benchmark_preset_id": "eval_micro_001",
+  "created_at": "2026-03-30T07:10:33Z",
+  "seeds_csv": "data/benchmarks/seeds.csv",
+  "description": null,
+  "tags": []
+}

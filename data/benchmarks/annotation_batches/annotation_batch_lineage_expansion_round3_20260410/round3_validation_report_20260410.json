@@ -1,0 +1,283 @@
+{
+  "generated_at": "2026-04-10T13:07:09.297329+00:00",
+  "batch_id": "annotation_batch_lineage_expansion_round3_20260410",
+  "batch_dir": "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410",
+  "discovered_files": [
+    "annotation_batch_manifest.json",
+    "annotator_a.completed.round3_revA_20260410.corrected_for_adjudication.csv",
+    "annotator_a.completed.round3_revA_20260410.csv",
+    "annotator_a.csv",
+    "annotator_b.completed.round3_revB_20260410.corrected_for_adjudication.csv",
+    "annotator_b.completed.round3_revB_20260410.csv",
+    "annotator_b.csv",
+    "campaign_audit_report.json",
+    "campaign_handoff_summary.md",
+    "pair_assignments.jsonl"
+  ],
+  "completed_annotator_csvs": [
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_a.completed.round3_revA_20260410.csv",
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_b.completed.round3_revB_20260410.csv"
+  ],
+  "adjudication_csvs_present_in_batch_dir": [],
+  "validation": {
+    "schema_valid": true,
+    "duplicate_rows_detected": false,
+    "annotator_identity_consistent": true,
+    "label_values_valid": true,
+    "textual_confidence_values_found": 0,
+    "out_of_range_confidence_values_found": 1,
+    "strict_workflow_loadable_without_sanitization": false
+  },
+  "file_summaries": {
+    "annotator_a.completed.round3_revA_20260410.csv": {
+      "row_count": 60,
+      "labeled_row_count": 60,
+      "annotator_ids_seen": {
+        "annotator_a": 60
+      },
+      "confidence_cells": {
+        "blank": 59,
+        "numeric": 1
+      }
+    },
+    "annotator_b.completed.round3_revB_20260410.csv": {
+      "row_count": 60,
+      "labeled_row_count": 60,
+      "annotator_ids_seen": {
+        "annotator_b": 60
+      },
+      "confidence_cells": {
+        "blank": 49,
+        "numeric": 11
+      }
+    }
+  },
+  "issues": {
+    "missing_columns": {
+      "annotator_a.completed.round3_revA_20260410.csv": [],
+      "annotator_b.completed.round3_revB_20260410.csv": []
+    },
+    "duplicates_within_file": [],
+    "invalid_label_rows": [],
+    "invalid_adjudicated_label_rows": [],
+    "unsupported_textual_confidence_rows": [],
+    "out_of_range_confidence_rows": [
+      {
+        "file": "annotator_a.completed.round3_revA_20260410.csv",
+        "row": 54,
+        "value": "5",
+        "seed_openalex_id": "https://openalex.org/W4407956601",
+        "candidate_openalex_id": "https://openalex.org/W1965928854"
+      }
+    ],
+    "missing_annotator_rows": [],
+    "aspect_mismatch_rows": [],
+    "annotator_identity_mismatch_rows": []
+  },
+  "pairwise_summary": {
+    "total_nonblank_rows": 120,
+    "unique_pair_count_with_any_label": 80,
+    "overlap_pair_count": 40,
+    "exact_match_pair_count": 22,
+    "disagreement_pair_count": 18,
+    "unresolved_conflict_pair_count": 18,
+    "agreement_rate_before_adjudication": 0.55
+  },
+  "materialization_status": {
+    "materialization_permitted": false,
+    "blocking_reason": "18 unresolved conflict pairs remain."
+  },
+  "sanitized_annotation_copies_for_adjudication": [
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_a.completed.round3_revA_20260410.corrected_for_adjudication.csv",
+    "/home/stts/projects/scholarly-similarity/data/benchmarks/annotation_batches/annotation_batch_lineage_expansion_round3_20260410/annotator_b.completed.round3_revB_20260410.corrected_for_adjudication.csv"
+  ],
+  "adjudication_export": {
+    "adjudication_id": "adjudication_batch_lineage_expansion_round3_20260410",
+    "adjudication_dir": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_batch_lineage_expansion_round3_20260410",
+    "adjudication_manifest_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_batch_lineage_expansion_round3_20260410/conflict_adjudication_manifest.json",
+    "template_path": "/home/stts/projects/scholarly-similarity/data/benchmarks/adjudication_batches/adjudication_batch_lineage_expansion_round3_20260410/conflict_adjudication_template.csv",
+    "conflict_pair_count": 18
+  },
+  "unresolved_conflict_examples": [
+    {
+      "seed_openalex_id": "https://openalex.org/W1971487905",
+      "candidate_openalex_id": "https://openalex.org/W1832964183",
+      "seed_title": "Complete Characterization of Quantum-Optical Processes",
+      "title": "Homodyne detection as an optimal small displacement measurement",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W1971487905",
+      "candidate_openalex_id": "https://openalex.org/W2024923816",
+      "seed_title": "Complete Characterization of Quantum-Optical Processes",
+      "title": "Remotely prepared single-photon time-encoded ebits: homodyne tomography characterization",
+      "annotator_labels": [
+        "annotator_a:1",
+        "annotator_b:2"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W1971487905",
+      "candidate_openalex_id": "https://openalex.org/W2050691228",
+      "seed_title": "Complete Characterization of Quantum-Optical Processes",
+      "title": "A balanced homodyne detector and local oscillator shaping for measuring optical Schr\u00f6dinger cat states",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W2941673255",
+      "candidate_openalex_id": "https://openalex.org/W1631356911",
+      "seed_title": "Detector tomography on IBM quantum computers and mitigation of an imperfect measurement",
+      "title": "<i>Quantum Computation and Quantum Information</i>",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W2941673255",
+      "candidate_openalex_id": "https://openalex.org/W1984964553",
+      "seed_title": "Detector tomography on IBM quantum computers and mitigation of an imperfect measurement",
+      "title": "Ancilla-Assisted Quantum Process Tomography",
+      "annotator_labels": [
+        "annotator_a:1",
+        "annotator_b:2"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W3206040918",
+      "candidate_openalex_id": "https://openalex.org/W2372149058",
+      "seed_title": "Characterizing Quantum Instruments: From Nondemolition Measurements to Quantum Error Correction",
+      "title": "Design and optimization of quantum error-correction circuit with module",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W3206040918",
+      "candidate_openalex_id": "https://openalex.org/W2761090343",
+      "seed_title": "Characterizing Quantum Instruments: From Nondemolition Measurements to Quantum Error Correction",
+      "title": "Learning time-dependent noise to reduce logical errors: real time error rate estimation in quantum error correction",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W3206040918",
+      "candidate_openalex_id": "https://openalex.org/W3205416935",
+      "seed_title": "Characterizing Quantum Instruments: From Nondemolition Measurements to Quantum Error Correction",
+      "title": "Quantum mechanics via quantum tomography",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W3206040918",
+      "candidate_openalex_id": "https://openalex.org/W4212962264",
+      "seed_title": "Characterizing Quantum Instruments: From Nondemolition Measurements to Quantum Error Correction",
+      "title": "Effect of quantum error correction on detection-induced coherent errors",
+      "annotator_labels": [
+        "annotator_a:1",
+        "annotator_b:2"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W3206040918",
+      "candidate_openalex_id": "https://openalex.org/W4388540582",
+      "seed_title": "Characterizing Quantum Instruments: From Nondemolition Measurements to Quantum Error Correction",
+      "title": "Error Suppression for Arbitrary-Size Black Box Quantum Operations",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W2122339379",
+      "seed_title": "Measured measurement",
+      "title": "A new approach to measurement in quantum tomography",
+      "annotator_labels": [
+        "annotator_a:1",
+        "annotator_b:2"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W2141398656",
+      "seed_title": "Measured measurement",
+      "title": "An invitation to quantum tomography (II)",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W2895591481",
+      "seed_title": "Measured measurement",
+      "title": "An Invitation to Quantum Tomography",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W2950844595",
+      "seed_title": "Measured measurement",
+      "title": "Experimental demonstration of loop state-preparation-and-measurement tomography",
+      "annotator_labels": [
+        "annotator_a:1",
+        "annotator_b:2"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W2952761342",
+      "seed_title": "Measured measurement",
+      "title": "General theory of measurement with two copies of a quantum state",
+      "annotator_labels": [
+        "annotator_a:1",
+        "annotator_b:2"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W4376654450",
+      "seed_title": "Measured measurement",
+      "title": "Minimal orthonormal bases for pure quantum state estimation",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W4386081343",
+      "seed_title": "Measured measurement",
+      "title": "Quantum State Tomography using Quantum Machine Learning",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    },
+    {
+      "seed_openalex_id": "https://openalex.org/W4289253527",
+      "candidate_openalex_id": "https://openalex.org/W4386498904",
+      "seed_title": "Measured measurement",
+      "title": "Nondestructively probing the thermodynamics of quantum systems with qumodes",
+      "annotator_labels": [
+        "annotator_a:0",
+        "annotator_b:1"
+      ]
+    }
+  ]
+}

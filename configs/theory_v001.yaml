@@ -1,0 +1,38 @@
+version: theory_v001
+aspect:
+  source: openalex
+  scope: local-micro
+  note: deterministic scaffold for DOI similarity experiments
+candidate_pool:
+  max_candidates: 25
+  include_related_works: true
+  include_references: true
+  include_citations: false
+  dedupe_key: openalex_id
+sim_weights:
+  bibliographic_coupling: 0.35
+  direct_citation: 0.25
+  topical: 0.20
+  temporal: 0.10
+  semantic: 0.10
+  graph_path: 0.00
+sim_parameters:
+  temporal_tau: 5.0
+  graph_path:
+    max_bridge_nodes: 40
+    allowed_path_lengths: [2, 3]
+    related_edge_weight: 0.50
+    path_length_decay: 0.60
+    saturation_kappa: 1.00
+confidence_factors:
+  coverage: 0.40
+  support: 0.35
+  maturity: 0.25
+confidence_parameters:
+  observation_year: 2026
+  support_eta: 3.0
+  maturity_tau: 8.0
+explanation:
+  top_k_features: 3
+  include_raw_scores: true
+  include_notes: true
